@@ -1,0 +1,154 @@
+.contacts {
+  @include flex-column;
+  align-items: center;
+  padding-top: 41px;
+}
+
+@media (min-width: $tablet-version) {
+  .contacts {
+    padding-top: 45px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .contacts {
+    padding-top: 66px;
+  }
+}
+
+.contacts__header {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+  margin: 0 0 32px;
+  width: 255px;
+}
+
+@media (min-width: $tablet-version) {
+  .contacts__header {
+    letter-spacing: -1px;
+    font-size: 40px;
+    line-height: 48px;
+    width: 385px;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .contacts__header {
+    line-height: 59px;
+    font-size: 50px;
+    width: 480px;
+    margin-bottom: 57px;
+  }
+}
+
+.contacts__tel {
+  text-align: center;
+  margin: 0 0 23px;
+}
+
+@media (min-width: $tablet-version) {
+  .contacts__tel {
+    margin-left: 18px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .contacts__tel {
+    order: -2;
+  }
+}
+
+.contacts__mail {
+  text-align: center;
+  margin: 0 0 26px;
+}
+
+@media (min-width: $tablet-version) {
+  .contacts__mail {
+    margin-bottom: 46px;
+  }
+}
+
+.contacts__address {
+  text-align: center;
+}
+
+@media (min-width: $tablet-version) {
+  .contacts__address {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .contacts__address {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .contacts__address {
+    margin: 0 0 0 24px;
+  }
+}
+
+.contacts__text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #283645;
+  margin: 0;
+}
+
+@media (min-width: $tablet-version) {
+  .contacts__text {
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .contacts__text {
+    margin-bottom: 22px;
+  }
+}
+
+.contacts__data {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #d22856;
+  margin: 0;
+
+  &--link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: #283645;
+    }
+
+    &:active {
+      text-decoration: none;
+      color: #283645;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .contacts__container {
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 568px;
+    margin-bottom: 2px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .contacts__container {
+    width: 887px;
+  }
+}

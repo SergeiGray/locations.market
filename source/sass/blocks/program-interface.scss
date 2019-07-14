@@ -1,0 +1,372 @@
+.program-interface {
+  @include flex-column;
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 42px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-version) {
+  .program-interface {
+    padding-top: 58px;
+    padding-bottom: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface {
+    margin: 0 auto 95px;
+    width: 940px;
+  }
+}
+
+.program-interface__picture {
+  @include flex-column;
+  line-height: 0;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-version) {
+  .program-interface__picture {
+    width: 300px;
+    height: 400px;
+    margin-right: 47px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__picture {
+    margin-right: 90px;
+  }
+}
+
+.program-interface__tuning {
+  @include flex-column;
+}
+
+@media (min-width: $tablet-version) {
+  .program-interface__tuning {
+    width: 260px;
+    padding-top: 9px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__tuning {
+    width: 410px;
+    padding-top: 0;
+  }
+}
+
+.program-interface__tuning-items {
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 33px;
+  padding-right: 47px;
+  margin-bottom: 37px;
+}
+
+@media (min-width: $tablet-version) {
+  .program-interface__tuning-items {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .program-interface__crop {
+    @include flex-row;
+    padding-bottom: 24px;
+    margin-bottom: 26px;
+    border-bottom: 1px solid #dedfe1;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__crop {
+    padding-bottom: 11px;
+    margin-bottom: 17px;
+  }
+}
+
+.program-interface__crop-svg {
+  width: 44px;
+  height: 44px;
+  fill: #d22856;
+}
+
+@media (min-width: $tablet-version) {
+  .program-interface__crop-svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 31px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__crop-svg {
+    width: 44px;
+    height: 44px;
+    margin-right: 48px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .program-interface__fill {
+    @include flex-row;
+    padding-bottom: 24px;
+    margin-bottom: 23px;
+    border-bottom: 1px solid #dedfe1;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__fill {
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+  }
+}
+
+.program-interface__fill-svg {
+  width: 48px;
+  height: 43px;
+  fill: #283645;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .program-interface__fill-svg {
+    width: 24px;
+    height: 22px;
+    margin-right: 31px;
+    fill: #d22856;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__fill-svg {
+    width: 48px;
+    height: 43px;
+    margin-right: 44px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .program-interface__contrast {
+    @include flex-row;
+    padding-bottom: 26px;
+    margin-left: 6px;
+    margin-bottom: 31px;
+    border-bottom: 1px solid #dedfe1;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__contrast {
+    padding-bottom: 19px;
+    margin-bottom: 110px;
+  }
+}
+
+.program-interface__contrast-svg {
+  width: 32px;
+  height: 32px;
+  fill: #283645;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .program-interface__contrast-svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 31px;
+    margin-top: 4px;
+    fill: #d22856;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__contrast-svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 53px;
+    margin-top: 4px;
+  }
+}
+
+.program-interface__buttons {
+  @include flex-column;
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.program-interface__tuning-scale {
+  position: relative;
+  background-color: #283645;
+  width: 240px;
+  height: 2px;
+  margin: 0 auto 75px;
+
+  &--crop,
+  &--fill,
+  &--contrast {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .program-interface__tuning-scale {
+    display: none;
+    margin: 0;
+
+    &--crop,
+    &--fill,
+    &--contrast {
+      display: flex;
+      width: 202px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__tuning-scale {
+    &--crop,
+    &--fill,
+    &--contrast {
+      width: 288px;
+      margin-top: 19px;
+      margin-right: 30px;
+    }
+  }
+}
+
+.program-interface__tuning-scale-svg {
+  position: absolute;
+  top: -7px;
+  right: 35px;
+  width: 14px;
+  height: 14px;
+  fill: #f2f2f2;
+
+  &:active {
+    fill: #d22856;
+  }
+
+  &--crop {
+    right: 42px;
+  }
+
+  &--fill {
+    right: 165px;
+  }
+
+  &--contrast {
+    right: 92px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__tuning-scale-svg {
+    &--crop {
+      right: 203px;
+    }
+
+    &--fill {
+      right: 27px;
+    }
+
+    &--contrast {
+      right: 113px;
+    }
+  }
+}
+
+.program-interface__button-post {
+  flex-grow: 2;
+  color: #d22856;
+  letter-spacing: 1px;
+  border-color: #d22856;
+  margin-bottom: 13px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+
+  &:active .program-interface__button-post-text {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .program-interface__button-post {
+    margin-bottom: 26px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__button-post {
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-right: 44px;
+  }
+}
+
+.program-interface__button-cancel {
+  flex-grow: 3;
+  color: #283645;
+  border-color: #283645;
+  opacity: 0.1;
+
+  &:hover {
+    color: #283645;
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: #283645;
+  }
+
+  &:active .program-interface__button-cancel-text {
+    opacity: 0.3;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__button-cancel {
+    font-size: 18px;
+  }
+}
+
+.program-interface__link {
+  display: flex;
+}

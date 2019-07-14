@@ -1,0 +1,147 @@
+.description {
+  &--index-page {
+    @include background-image;
+    min-height: 462px;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 178px, center top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+      background-size: 258px auto, 320px auto;
+    }
+  }
+
+  &--photo-page {
+    @include background-image;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
+  }
+
+  &--form-page {
+    @include background-image;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .description {
+    &--index-page {
+      @include background-image;
+      min-height: 729px;
+      background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: bottom center, center top;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+        background-size: 700px auto, 1200px auto;
+      }
+    }
+
+    &--photo-page {
+      @include background-image;
+      min-height: 440px;
+      background-image: url("../img/bg-back-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+        background-size: 1200px auto;
+      }
+    }
+
+    &--form-page {
+      @include background-image;
+      min-height: 440px;
+      background-image: url("../img/bg-back-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+        background-size: 1200px auto;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .description {
+    &--index-page {
+      @include background-image;
+      position: relative;
+      min-height: 853px;
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+        background-size: 2560px auto;
+      }
+    }
+
+    &--photo-page {
+      @include background-image;
+      min-height: 395px;
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 0%;
+      background-size: 200%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+        background-size: 2560px auto;
+      }
+    }
+
+    &--form-page {
+      @include background-image;
+      min-height: 395px;
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 0%;
+      background-size: 200%;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+        background-size: 2560px auto;
+      }
+    }
+  }
+}
+
+.description__signature {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (min-width: $tablet-version) {
+  .description__signature {
+    font-size: 50px;
+    line-height: 60px;
+
+    &--form-page {
+      letter-spacing: -1px;
+    }
+  }
+}

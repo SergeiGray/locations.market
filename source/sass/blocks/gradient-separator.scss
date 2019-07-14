@@ -1,0 +1,19 @@
+.gradient-separator {
+  min-width: 100%;
+  min-height: 90px;
+  background: linear-gradient(175deg, #ffffff 0, #ffffff 50px, #f2f2f2 50px, #f2f2f2 100px);
+}
+
+@media (min-width: $tablet-version) {
+  .gradient-separator {
+    min-height: 60px;
+    background: linear-gradient(177deg, #ffffff 0, #ffffff 50px, #f2f2f2 50px, #f2f2f2 100px);
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .gradient-separator {
+    min-height: 90px;
+    background: linear-gradient(176deg, #ffffff 0, #ffffff 100px, #f2f2f2 100px, #f2f2f2 200px);
+  }
+}

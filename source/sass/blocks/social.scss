@@ -1,0 +1,45 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-version) {
+  .social {
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .social {
+    margin-left: 8px;
+  }
+}
+
+.social__twitter {
+  @include social-icon-size;
+}
+
+.social__facebook {
+  @include social-icon-size;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.social__youtube {
+  @include social-icon-size;
+}
+
+.social__twitter-svg {
+  width: 17px;
+  height: 15px;
+}
+
+.social__facebook-svg {
+  width: 9px;
+  height: 19px;
+}
+
+.social__youtube-svg {
+  width: 15px;
+  height: 14px;
+}

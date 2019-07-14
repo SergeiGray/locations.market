@@ -1,0 +1,57 @@
+.download {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-version) {
+  .download {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -6px;
+      left: 16px;
+      width: 1050px;
+      height: 645px;
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      &::after {
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+        background-size: 1050px auto;
+      }
+    }
+  }
+}
+
+.download__slogan {
+  display: none;
+  width: 186px;
+  margin: 0;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width: $tablet-version) {
+  .download__slogan {
+    display: inline-block;
+    line-height: 49px;
+    letter-spacing: -1px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .download__slogan {
+    width: 300px;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+  }
+}

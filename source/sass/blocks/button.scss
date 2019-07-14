@@ -1,0 +1,27 @@
+.button {
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 35px;
+  padding-top: 12px;
+  padding-bottom: 17px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .button {
+    font-size: 21px;
+  }
+}
