@@ -14,7 +14,7 @@ var del = require("del");
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    .pipe(minify_html({ collapseWhitespace: true }))
+    // .pipe(minify_html({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
@@ -26,7 +26,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(minify_css())
+    // .pipe(minify_css())
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -34,12 +34,13 @@ gulp.task("css", function () {
 
 gulp.task("js", function () {
   return gulp.src("source/js/**/*.js")
-    .pipe(minify_js())
+    // .pipe(minify_js())
     .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("copy", function () {
   return gulp.src([
+    "source/css/**",
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/*.ico"

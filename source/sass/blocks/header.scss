@@ -1,0 +1,76 @@
+// ---HEADER---
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__proxy {
+  margin-right: 130px;
+
+  a {
+    @include font_Ubuntu;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0.7;
+
+    &:first-child {
+      margin-right: 40px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.header__login {
+  margin-right: 65px;
+
+  a {
+    @include font_Ubuntu;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0.7;
+
+    &:first-of-type {
+      margin-right: 19px;
+    }
+
+    &:last-of-type {
+      margin-left: 16px;
+    }
+  }
+}
+
+.header__login_separator {
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  left: 1212px;
+  top: 42px;
+  background: #FF3501;
+}
+
+.header__lang a {
+  text-decoration: none;
+
+  &:first-child {
+    margin-right: 18px;
+  }
+}

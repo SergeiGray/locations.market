@@ -1,40 +1,16 @@
-@mixin flex-column {
+@mixin flex_column {
   display: flex;
   flex-direction: column;
 }
 
-@mixin flex-row {
-  display: flex;
-  flex-direction: row;
+@mixin font_Roboto {
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
-@mixin background-image {
-  box-sizing: border-box;
-  background-color: #283645;
+@mixin font_Bebas {
+  font-family: "Bebas Neue", "Arial", sans-serif;
 }
 
-@mixin list-reset {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-@mixin social-icon-size {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
-  border: 3px solid rgba(40, 54, 69, 0.1);
-  border-radius: 50%;
-  background-color: #fefefe;
-  fill: #d22856;
-
-  &:hover {
-    border: 3px solid #283645;
-  }
-
-  &:active {
-    opacity: 0.1;
-  }
+@mixin font_Ubuntu {
+  font-family: "Ubuntu", "Arial", sans-serif;
 }

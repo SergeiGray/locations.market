@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Locations.market</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/overlay_scrollbars.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <header>
+    <section class="wrapper header__container">
+      <a href="index.html" class="logo">
+        <svg class="logo__icon" width="25" height="33">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+        <span class="logo__text_container">
+          <span>locations.</span><span>market</span>
+        </span>
+      </a>
+      <nav class="header__nav">
+        <div class="header__proxy">
+          <a href="">IPv4</a>
+          <a href="">IPv6</a>
+          <a href="">Инструменты</a>
+        </div>
+        <div class="header__login">
+          <a href="">Войти</a>
+          <div class="header__login_separator"></div>
+          <a href="">Зарегистрироваться</a>
+        </div>
+        <div class="header__lang">
+          <a href="">
+            <svg width="21" height="14">
+              <use xlink:href="img/sprite.svg#icon-en"></use>
+            </svg>
+          </a>
+          <a href="index.html">
+            <svg width="21" height="14">
+              <use xlink:href="img/sprite.svg#icon-ru"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section class="landing">
+      <section class="wrapper landing__container">
+        <div class="landing__container_row">
+          <div class="landing__container_col">
+            <p class="landing__subtitle">IPv4/IPv6 от лучших провайдеров</p>
+            <h1 class="landing__title">Стабильные прокси</h1>
+            <p class="landing__text">Приватные прокси-серверы HTTPS и SOCKS5 из разных стран с высоким аптаймом, надёжным соединением и удобным личным кабинетом.</p>
+            <button class="submit_dark">Зарегистрироваться</button>
+          </div>
+          <div class="landing__container_col">
+            <form action="" class="landing__form">
+              <label class="select_label">
+                <span class="select_title">Тип</span>
+                <select name="type" id="" class="select_unit">
+                  <option value="IPv6" selected="">IPv6</option>
+                  <option value="IPv4">IPv4</option>
+                  <option value="Shared IPv4">Shared IPv4</option>
+                </select>
+              </label>
+              <label class="select_label">
+                <span class="select_title">Страна</span>
+                <select name="country" id="" class="select_unit">
+                  <option value="Россия">Россия</option>
+                  <option value="Германия">Германия</option>
+                  <option value="США">США</option>
+                  <option value="Франция">Франция</option>
+                  <option value="Австралия">Австралия</option>
+                  <option value="Сингапур">Сингапур</option>
+                  <option value="Великобритания">Великобритания</option>
+                  <option value="Украина">Украина</option>
+                  <option value="Япония">Япония</option>
+                  <option value="Нидерланды">Нидерланды</option>
+                </select>
+              </label>
+              <label class="select_label">
+                <span class="select_title">Количество</span>
+                <input name="amount" type="number" min="1" value="1" placeholder="1" class="input_dark">
+              </label>
+              <label class="select_label">
+                <span class="select_title">Срок</span>
+                <select name="time" id="" class="select_unit">
+                  <option value="3 дня">3 дня</option>
+                  <option value="7 дней">7 дней</option>
+                  <option value="2 недели">2 недели</option>
+                  <option value="1 месяц">1 месяц</option>
+                  <option value="2 месяца">2 месяца</option>
+                  <option value="3 месяца">3 месяца</option>
+                  <option value="6 месяцев">6 месяцев</option>
+                  <option value="1 год">1 год</option>
+                </select>
+              </label>
+              <label class="select_label">
+                <span class="select_title">Протокол</span>
+                <select name="protocol" id="" class="select_unit select_protocol">
+                  <option value="HTTPS">HTTPS</option>
+                  <option value="SOCKS">SOCKS</option>
+                </select>
+              </label>
+              <div class="landing__form_row">
+                <div class="landing__form_col">
+                  <p class="landing__price_big">6,5 руб.</p>
+                  <p class="landing__price_small">6,5 руб/шт</p>
+                </div>
+                <div class="landing__form_col">
+                  <button class="landing__button_promo">Промокод</button>
+                  <label class="select_label landing__label_promo display_none">
+                    <span class="select_title">Промокод</span>
+                    <input name="promocode" type="text" class="input_dark">
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="button_dark">Купить прокси</button>
+            </form>
+            <p class="landing__form_link">Не знаете какой прокси нужен? <a href="">Поможем подобрать</a></p>
+          </div>
+        </div>
+        <div class="landing__container_row">
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer></footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.overlayScrollbars.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
