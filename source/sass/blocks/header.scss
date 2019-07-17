@@ -67,6 +67,47 @@
   background: #FF3501;
 }
 
+.header__account {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.header__account_link {
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+  @include font_Ubuntu;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.header__account_icon {
+  margin-right: 10px;
+}
+
+.header__logout {
+  min-height: 35px;
+  min-width: 115px;
+  padding: 11px 45px 11px 24px;
+  text-align: left;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M6.21534 0.284668C7.5349 0.284668 8.79564 0.693271 9.8612 1.46627C9.98328 1.55482 10.0165 1.72246 9.93732 1.85088L8.93658 3.47444C8.89447 3.54268 8.82584 3.59039 8.74714 3.60593C8.66853 3.62142 8.58689 3.60356 8.52194 3.55651C7.89908 3.10466 7.16202 2.8658 6.39038 2.8658C4.38641 2.8658 2.75607 4.49614 2.75607 6.50011C2.75607 8.50408 4.38641 10.1344 6.39038 10.1344C7.16202 10.1344 7.89908 9.89561 8.52194 9.44372C8.58689 9.39662 8.66853 9.37867 8.74714 9.3943C8.82584 9.40984 8.89447 9.4575 8.93658 9.52579L9.93732 11.1494C10.0165 11.2778 9.98328 11.4454 9.8612 11.534C8.79564 12.307 7.5349 12.7156 6.21534 12.7156C2.78811 12.7156 -0.000152588 9.92739 -0.000152588 6.50016C-0.000152588 3.07293 2.78811 0.284668 6.21534 0.284668Z' fill='%23EF081F'/%3E%3Cpath d='M9.04283 8.83107C8.99262 8.73731 8.99814 8.62359 9.0571 8.53517L9.73393 7.51991H5.63845C5.07603 7.51991 4.6185 7.06237 4.6185 6.49995C4.6185 5.93754 5.07603 5.48 5.63845 5.48H9.73393L9.0571 4.46473C8.9981 4.37631 8.99262 4.26259 9.04283 4.16884C9.09299 4.07512 9.19064 4.0166 9.29696 4.0166H11.2481C11.3444 4.0166 11.4345 4.06475 11.4879 4.14498L12.9514 6.34006C13.0159 6.43688 13.0159 6.56298 12.9514 6.65985L11.488 8.85492C11.4345 8.93511 11.3445 8.9833 11.2481 8.9833H9.29696C9.1906 8.9833 9.09295 8.92478 9.04283 8.83107Z' fill='%23EF081F'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='13' height='13' fill='white' transform='matrix(-1 0 0 1 13 0)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
 .header__lang a {
   text-decoration: none;
 

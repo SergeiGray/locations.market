@@ -41,9 +41,19 @@
     });
   };
 
+  let getLink = function () {
+    $('.landing__button_promo').click( function (evt) {
+      evt.preventDefault();
+      $('.landing__button_promo').addClass('display_none');
+      $('.landing__label_promo').removeClass('display_none');
+      $('.landing__button_promo').unbind('click');
+    });
+  };
+
   hangSelect2();
   scrollBarСustomization();
   hangFlexslider();
   getSlider();
+  getLink();
 
 })();

@@ -9,16 +9,28 @@
   margin-bottom: 100px;
 }
 
+.applicable__container_col {
+  display: flex;
+  align-items: center;
+  width: 50%;
+
+  &:first-child {
+    justify-content: flex-end;
+  }
+
+  &:last-child {
+    justify-content: flex-start;
+  }
+}
+
 .applicable__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-  div {
+  align-items: flex-start;
+  justify-content: flex-start;
     width: 550px;
     margin-left: 50px;
     margin-right: 190px;
-  }
 
   .title {
     margin-bottom: 15px;

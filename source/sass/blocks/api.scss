@@ -7,13 +7,14 @@
 .api__container {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
 
   .title {
     margin-bottom: 40px;
   }
 
   .text {
-    width: 605px;
+    width: 670px;
   }
 
   .text:first-of-type {
@@ -21,7 +22,7 @@
   }
 
   .text:last-of-type {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
   }
 
   .submit_light {
@@ -29,11 +30,11 @@
   }
 }
 
-.api__icon {
-  width: 471px;
-  height: 329px;
-  flex-shrink: 0;
-  margin-left: -70px;
-  margin-right: 20px;
+.api__content {
+  background-image: url(../img/bg_api.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  padding-left: 510px;
+  margin-left: -120px;
 }
-
