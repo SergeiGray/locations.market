@@ -1,0 +1,39 @@
+// ---API---
+
+.api {
+  margin-bottom: 100px;
+}
+
+.api__container {
+  display: flex;
+  align-items: flex-start;
+
+  .title {
+    margin-bottom: 40px;
+  }
+
+  .text {
+    width: 605px;
+  }
+
+  .text:first-of-type {
+    margin-bottom: 25px;
+  }
+
+  .text:last-of-type {
+    margin-bottom: 45px;
+  }
+
+  .submit_light {
+    min-width: 282px;
+  }
+}
+
+.api__icon {
+  width: 471px;
+  height: 329px;
+  flex-shrink: 0;
+  margin-left: -70px;
+  margin-right: 20px;
+}
+

@@ -5,6 +5,29 @@ body {
   margin: 0;
 }
 
+// ---WRAPPER---
+
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+@media (max-width: $tablet) {
+  .wrapper {
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $mobile) {
+  .wrapper {
+    width: 290px;
+    margin: 0 auto;
+  }
+}
+
+// ---BASE---
+
 .logo {
   display: flex;
   align-items: center;

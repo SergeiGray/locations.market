@@ -2,11 +2,13 @@
 
 .landing {
   width: 100vw;
-  min-height: 770px;
+  min-height: 970px;
   height: 100vh;
   box-sizing: border-box;
   margin-top: -63px;
+  margin-bottom: 100px;
   padding-top: 250px;
+  padding-bottom: 55px;
   background: url(../img/bg_landing.jpg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -21,6 +23,14 @@
 .landing__container_row {
   display: flex;
   justify-content: space-between;
+
+  &:first-child {
+    margin-bottom: 130px;
+  }
+
+  &:last-child {
+    align-items: center;
+  }
 }
 
 .landing__container_col {
@@ -171,4 +181,9 @@
     color: #FFFFFF;
     opacity: 0.7;
   }
+}
+
+.landing__icon {
+  fill: #ffffff;
+  opacity: 0.5;
 }

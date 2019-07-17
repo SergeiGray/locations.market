@@ -1,0 +1,38 @@
+// ---NEWS---
+
+.news {
+  margin-bottom: 100px;
+  background-color: #EF081F;
+
+  .title {
+    color: #ffffff;
+  }
+
+  .text {
+    color: #ffffff;
+  }
+}
+
+.news__container_row {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.news__social_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 230px;
+  height: 230px;
+}
+
+.news__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,163 @@
+// ---APPLICABLE---
+
+.applicable {
+  display: flex;
+  justify-content: center;
+  min-height: 710px;
+  width: 100%;
+  background-color: #F9F9F9;
+  margin-bottom: 100px;
+}
+
+.applicable__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  div {
+    width: 550px;
+    margin-left: 50px;
+    margin-right: 190px;
+  }
+
+  .title {
+    margin-bottom: 15px;
+  }
+
+  .subtitle {
+    margin-bottom: 50px;
+  }
+
+  .text {
+    margin-bottom: 50px;
+  }
+
+  .submit_light {
+    min-width: 282px;
+  }
+}
+
+.applicable__icons {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 480px;
+  max-width: 960px;
+}
+
+.applicable__icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 237px;
+  box-sizing: border-box;
+
+  &:nth-child(1) {
+    background: #F7F7F7;
+
+    .applicable__icon {
+      width: 45px;
+      height: 44px;
+    }
+  }
+
+  &:nth-child(2) {
+    background: #F5F5F5;
+
+    .applicable__icon {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &:nth-child(3) {
+    background: #F2F2F2;
+
+    .applicable__icon {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &:nth-child(4) {
+    background: #F0F0F0;
+
+    .applicable__icon {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &:nth-child(5) {
+    background: #F5F5F5;
+
+    .applicable__icon {
+      width: 117px;
+      height: 35px;
+    }
+  }
+
+  &:nth-child(6) {
+    background: #F2F2F2;
+
+    .applicable__icon {
+      width: 133px;
+      height: 42px;
+    }
+  }
+
+  &:nth-child(7) {
+    background: #F0F0F0;
+
+    .applicable__icon {
+      width: 117px;
+      height: 47px;
+    }
+  }
+
+  &:nth-child(8) {
+    background: #EDEDED;
+
+    .applicable__icon {
+      width: 149px;
+      height: 31px;
+    }
+  }
+
+  &:nth-child(9) {
+    background: #F2F2F2;
+
+    .applicable__icon {
+      width: 130px;
+      height: 29px;
+    }
+  }
+
+  &:nth-child(10) {
+    background: #F0F0F0;
+
+    .applicable__icon {
+      width: 155px;
+      height: 44px;
+    }
+  }
+
+  &:nth-child(11) {
+    background: #EDEDED;
+
+    .applicable__icon {
+      width: 130px;
+      height: 48px;
+    }
+  }
+
+  &:nth-child(12) {
+    background: #EBEBEB;
+
+    .applicable__icon {
+      width: 155px;
+      height: 45px;
+    }
+  }
+}
+

@@ -14,7 +14,36 @@
     });
   }
 
+  let hangFlexslider = function () {
+    $(document).ready(function() {
+      $('.feedback__slider').flexslider({
+        selector: ".feedback__slider_container > li",
+        animation: "slide",
+        slideshow: false,
+        smoothHeight: true,
+        keyboard: true,
+        prevText: "",
+        nextText: "",
+        itemWidth: 350,
+        itemMargin: 40,
+        minItems: 1,
+        maxItems: 3,
+        controlNav: false
+      });
+    });
+  }
+
+  let getSlider = function () {
+    $('.questions__answer_title').click( function (evt) {
+      evt.preventDefault();
+      $(evt.target).parents('.questions__answer').find('.questions__answer_text').slideToggle('slow');
+      $(evt.target).parents('.questions__answer').find('.questions__answer_pointer').toggleClass('questions__answer_pointer_open');
+    });
+  };
+
   hangSelect2();
   scrollBarСustomization();
+  hangFlexslider();
+  getSlider();
 
 })();
