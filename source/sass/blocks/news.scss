@@ -25,6 +25,13 @@
   background-position: left center;
 }
 
+@media (max-width: $tablet) {
+  .news__container {
+    justify-content: space-between;
+    background-image: none;
+  }
+}
+
 .news__content {
   display: flex;
   flex-direction: column;

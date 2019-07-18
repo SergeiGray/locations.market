@@ -25,6 +25,24 @@
     margin-bottom: 8px;
     color: #A6A6A6;
   }
+
+  .submit_dark {
+    min-height: 80px;
+    min-width: 282px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .feedback__container {
+
+    .title {
+      text-align: center;
+    }
+
+    .submit_dark {
+      min-width: 100%;
+    }
+  }
 }
 
 .feedback__slider {

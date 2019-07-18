@@ -1,10 +1,16 @@
 // ---FOOTER---
 
 footer {
-  background-image: url(../img/bg_footer.jpg);
+  background-image: url(../img/bg_footer_desktop.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+}
+
+@media (max-width: $tablet) {
+  footer {
+    background-image: url(../img/bg_footer_tablet.jpg);
+  }
 }
 
 .footer__container {
@@ -13,6 +19,13 @@ footer {
   justify-content: space-between;
   min-height: 150px;
   box-sizing: border-box;
+}
+
+@media (max-width: $tablet) {
+  .footer__container {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .footer__container_col {
@@ -37,4 +50,20 @@ footer {
   a.text:hover {
     color: #FF3501;
   }
+}
+
+@media (max-width: $tablet) {
+  .footer__container_col {
+    a {
+      display: none;
+    }
+
+    .text:nth-child(1) {
+      margin-right: 0;
+    }
+  }
+}
+
+.display_none {
+  display: none;
 }
