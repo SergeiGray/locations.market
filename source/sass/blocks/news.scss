@@ -2,7 +2,7 @@
 
 .news {
   margin-bottom: 100px;
-  padding: 44px 0;
+  padding: 44px 0 41px;
   background-color: #EF081F;
 
   .title {
@@ -14,6 +14,16 @@
 
   .text {
     color: #ffffff;
+  }
+}
+
+@media (max-width: $tablet) {
+  .news {
+    margin-bottom: 81px;
+
+    .title {
+      margin-bottom: 26px;
+    }
   }
 }
 
@@ -49,9 +59,10 @@
 .news__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 425px;
   margin-right: 50px;
+  padding-top: 18px;
 }
 
 @media (max-width: $mobile) {
@@ -65,7 +76,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 230px;
-  height: 230px;
 }
 
 @media (max-width: $mobile) {
@@ -84,6 +94,10 @@
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.7);
   background-color: transparent;
+
+  &:first-child {
+    margin-bottom: 30px;
+  }
 
   &:hover {
     background-color: #ffffff;

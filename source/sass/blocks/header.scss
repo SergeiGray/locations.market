@@ -52,18 +52,14 @@
       color: #FF3501;
     }
 
-    &:first-child {
-      margin-right: 40px;
-    }
-
-    &:nth-child(2) {
-      margin-right: 40px;
+    &:not(:last-child) {
+      margin-right: 35px;
     }
   }
 }
 
 .header__login {
-  margin-right: 65px;
+  margin-right: 64px;
 
   a {
     @include font_Ubuntu;
@@ -80,11 +76,11 @@
     }
 
     &:first-of-type {
-      margin-right: 19px;
+      margin-right: 13px;
     }
 
     &:last-of-type {
-      margin-left: 16px;
+      margin-left: 13px;
     }
   }
 }
@@ -139,10 +135,15 @@
   background-position: right center;
 }
 
-.header__lang a {
-  text-decoration: none;
+.header__lang {
+  display: flex;
 
-  &:first-child {
-    margin-right: 18px;
+  a {
+    text-decoration: none;
+    margin-top: 10px;
+
+    &:first-child {
+      margin-right: 18px;
+    }
   }
 }

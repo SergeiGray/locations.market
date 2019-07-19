@@ -1,7 +1,13 @@
 // ---API---
 
 .api {
-  margin-bottom: 100px;
+  margin-bottom: 94px;
+}
+
+@media (max-width: $tablet) {
+  .api {
+    margin-bottom: 77px;
+  }
 }
 
 .api__container {
@@ -32,6 +38,10 @@
 
 @media (max-width: $tablet) {
   .api__container {
+
+    .title {
+      margin-bottom: 26px;
+    }
 
     .text {
       width: 530px;

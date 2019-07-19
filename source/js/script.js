@@ -139,7 +139,7 @@
   };
 
   hangSelect2();
-  scrollBarСustomization();
+  // scrollBarСustomization();
   hangFlexslider();
   getSlider();
   getLink();

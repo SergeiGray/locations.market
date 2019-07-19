@@ -6,12 +6,13 @@
   min-height: 710px;
   width: 100%;
   background-color: #F9F9F9;
-  margin-bottom: 100px;
+  margin-bottom: 98px;
 }
 
 @media (max-width: $tablet) {
   .applicable {
     flex-direction: column;
+    margin-bottom: 78px;
   }
 }
 
@@ -33,6 +34,7 @@
   .applicable__container_col {
     width: 100%;
     justify-content: center;
+    margin-bottom: 81px;
 
     &:first-child {
       order: 1;
@@ -76,8 +78,17 @@
     align-items: center;
     margin: 0;
 
+    .title {
+      margin-bottom: 11px;
+    }
+
+    .subtitle {
+      margin-bottom: 28px;
+    }
+
     .text {
       text-align: center;
+      margin-bottom: 40px;
     }
   }
 }

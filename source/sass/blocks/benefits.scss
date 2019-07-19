@@ -4,19 +4,25 @@
   margin-bottom: 100px;
 }
 
+@media (max-width: $tablet) {
+  .benefits {
+    margin-bottom: 81px;
+  }
+}
+
 .benefits__container {
   display: flex;
   flex-direction: column;
 
   .title {
     position: relative;
-    margin-bottom: 17px;
+    margin-bottom: 14px;
     text-align: center;
 
     &:after {
       content: '';
       position: absolute;
-      top: 50px;
+      top: 40px;
       left: 0;
       width: 230px;
       height: 90px;
@@ -29,7 +35,7 @@
     &:before {
       content: '';
       position: absolute;
-      top: 50px;
+      top: 40px;
       right: 0;
       width: 230px;
       height: 90px;
@@ -52,18 +58,24 @@
 
   .text {
     text-align: center;
+    line-height: 120%;
   }
 }
 
 @media (max-width: $tablet) {
   .benefits__container {
     .title {
+      margin-bottom: 12px;
+
       &:after {
         border: none;
       }
       &:before {
         border: none;
       }
+    }
+    .subtitle {
+      margin-bottom: 56px;
     }
   }
 }
@@ -74,6 +86,7 @@
 
   &:first-of-type {
     justify-content: space-between;
+    margin-bottom: 11px;
   }
 
   &:last-of-type {
@@ -112,7 +125,7 @@
   .benefits__container_row {
 
     &:first-of-type {
-      // justify-content: flex-start;
+      margin-bottom: 50px;
     }
     &:last-of-type {
       &:after {
@@ -137,9 +150,14 @@
 @media (max-width: $tablet) {
   .benefits__container_col {
     width: 230px;
+    margin-bottom: 13px;
 
     &:last-child {
       margin-right: auto;
+    }
+
+    &:nth-child(5) {
+      margin-bottom: 41px;
     }
   }
 }

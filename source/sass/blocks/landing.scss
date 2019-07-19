@@ -1,13 +1,13 @@
 // ---LANDING---
 
 .landing {
-  width: 100vw;
-  min-height: 970px;
+  width: 100%;
+  min-height: 955px;
   height: 100vh;
   box-sizing: border-box;
   margin-top: -67px;
-  margin-bottom: 100px;
-  padding-top: 250px;
+  margin-bottom: 97px;
+  padding-top: 215px;
   padding-bottom: 55px;
   background-color: #3a0702;
   background-image: url(../img/bg_landing_desktop.jpg);
@@ -20,7 +20,9 @@
   .landing {
     height: auto;
     margin-top: -63px;
-    padding-top: 160px;
+    margin-bottom: 56px;
+    padding-top: 118px;
+    padding-bottom: 40px;
     background-image: url(../img/bg_landing_tablet.jpg);
   }
 }
@@ -64,7 +66,7 @@
   justify-content: space-between;
 
   &:first-child {
-    margin-bottom: 130px;
+    margin-bottom: 141px;
   }
 
   &:last-child {
@@ -76,7 +78,7 @@
   .landing__container_row {
     &:first-child {
       flex-direction: column;
-      margin-bottom: 55px;
+      margin-bottom: 66px;
     }
   }
 }
@@ -88,10 +90,15 @@
 
   &:first-child {
     width: 645px;
+    padding-top: 39px;
   }
 
   &:last-child {
     width: 360px;
+  }
+
+  .submit_dark {
+    min-width: 300px;
   }
 }
 
@@ -99,6 +106,7 @@
   .landing__container_col {
     &:first-child {
       width: 100%;
+      margin-bottom: 57px;
     }
 
     &:last-child {
@@ -121,7 +129,7 @@
 }
 
 .landing__subtitle {
-  margin: 0 0 15px;
+  margin: 0 0 16px;
   font-size: 20px;
   line-height: 150%;
   letter-spacing: 0.1em;
@@ -132,6 +140,7 @@
 @media (max-width: $tablet) {
   .landing__subtitle {
     font-size: 18px;
+    margin: 0 0 19px;
   }
 }
 
@@ -153,6 +162,7 @@
 @media (max-width: $tablet) {
   .landing__title {
     font-size: 70px;
+    margin: 0 0 26px;
   }
 }
 
@@ -163,7 +173,7 @@
 }
 
 .landing__text {
-  margin: 0 0 70px;
+  margin: 0 0 68px;
   font-size: 18px;
   line-height: 150%;
   color: #FFFFFF;
@@ -173,6 +183,7 @@
 @media (max-width: $tablet) {
   .landing__text {
     font-size: 16px;
+    margin: 0 0 45px;
   }
 }
 
@@ -196,6 +207,7 @@
 @media (max-width: $tablet) {
   .landing__form {
     flex-wrap: nowrap;
+    margin-bottom: 17px;
   }
 }
 
@@ -218,6 +230,18 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: $tablet) {
+  .landing__form {
+    .select_label {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
 .landing__form .button_dark {
   width: 100%;
   margin-top: 26px;
@@ -232,6 +256,24 @@
 
   &:first-child {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .landing__form_row {
+    width: 50%;
+    box-sizing: border-box;
+
+    &:first-child {
+      padding-right: 33px;
+      margin: 0;
+    }
+    &:last-child {
+      padding-top: 22px;
+      padding-left: 15px;
+      height: 100px;
+      margin-top: 18px;
+    }
   }
 }
 
@@ -270,6 +312,7 @@
 }
 
 .landing__form_link {
+  margin: 0;
   font-size: 14px;
   line-height: 150%;
   text-align: center;
