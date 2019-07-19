@@ -19,6 +19,16 @@
   }
 }
 
+@media (max-width: $mobile) {
+  .questions {
+    margin-bottom: 60px;
+
+    .title {
+      margin-bottom: 26px;
+    }
+  }
+}
+
 .questions__container {
   display: flex;
   flex-direction: column;
@@ -64,6 +74,11 @@
 
 @media (max-width: $mobile) {
   .questions__container_row {
+
+    &:first-of-type {
+      margin-bottom: 36px;
+    }
+
     &:last-of-type {
       background-color: transparent;
       padding: 0;
@@ -113,10 +128,12 @@
 
 @media (max-width: $mobile) {
   .questions__chat {
-    margin-left: 0;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 33px;
 
     &::before {
-      left: 75px;
+      left: 79px;
     }
   }
 }
@@ -146,7 +163,7 @@
     min-width: 100%;
 
     &::before {
-      left: 30px;
+      left: 41px;
     }
   }
 }
@@ -166,6 +183,15 @@
   .questions__answer {
     width: 100%;
     margin-right: 0;
+  }
+}
+
+@media (max-width: $mobile) {
+  .questions__answer {
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -273,10 +299,15 @@
 
 @media (max-width: $mobile) {
   .questions__request {
-    padding: 0 16px;
+    padding: 28px 16px 0;
+
+    .text {
+      margin-bottom: 22px;
+    }
 
     .submit_light {
       width: 100%;
+      margin: 0 0 23px;
     }
   }
 }
@@ -287,6 +318,12 @@
   font-size: 24px;
   line-height: 150%;
   color: #5A5A5A;
+}
+
+@media (max-width: $mobile) {
+  .questions__request_title {
+    margin: 0 0 13px;
+  }
 }
 
 .questions__form {}
@@ -384,5 +421,11 @@
 @media (max-width: $tablet) {
   .questions__request_link {
     width: 312px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .questions__request_link {
+    margin: 0 0 40px;
   }
 }

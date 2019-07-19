@@ -29,8 +29,12 @@
 
 @media (max-width: $mobile) {
   .news {
+    padding: 35px 0 52px;
+    margin-bottom: 32px;
+
     .title {
       width: 220px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -68,6 +72,7 @@
 @media (max-width: $mobile) {
   .news__content {
     width: 100%;
+    margin-bottom: 25px;
   }
 }
 

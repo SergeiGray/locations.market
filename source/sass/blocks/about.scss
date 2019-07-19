@@ -10,12 +10,26 @@
   }
 }
 
+@media (max-width: $mobile) {
+  .about {
+    margin-bottom: 55px;
+  }
+}
+
 .about__container {
   display: flex;
   flex-direction: column;
 
   .text:not(:last-child) {
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .about__container {
+    .text:not(:last-child) {
+      margin-bottom: 21px;
+    }
   }
 }
 
@@ -42,4 +56,11 @@
   font-size: 18px;
   line-height: 150%;
   color: #5A5A5A;
+}
+
+@media (max-width: $mobile) {
+  .about__item_title {
+    font-size: 16px;
+    margin: 0 0 21px;
+  }
 }

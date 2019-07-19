@@ -138,10 +138,27 @@
     });
   };
 
+  let showHeaderNav = function () {
+    $('.header__nav_close, .overlay').click(function (){
+      $('.header__nav, .overlay').css({'opacity': 0, 'display': 'none'});
+    });
+    $('.header__nav_open').click(function (event){
+      event.preventDefault();
+      $('.header__nav, .overlay').css({'opacity': 1, 'display': 'flex'});
+      $(document).keydown(function(event) {
+          if (event.keyCode === 27) {
+              event.stopPropagation();
+              $('.header__nav, .overlay').css({'opacity': 0, 'display': 'none'});
+          }
+      });
+    });
+  };
+
   hangSelect2();
-  // scrollBarСustomization();
+  scrollBarСustomization();
   hangFlexslider();
   getSlider();
   getLink();
+  showHeaderNav();
 
 })();

@@ -42,6 +42,7 @@
           <a href="">Зарегистрироваться</a>
         </div>
         <div class="header__lang">
+          <button class="header__nav_close"></button>
           <a href="">
             <svg width="21" height="14">
               <use xlink:href="img/sprite.svg#icon-en"></use>
@@ -53,8 +54,12 @@
             </svg>
           </a>
         </div>
+        <div class="header__info">
+          <a href="" class="text">Политика конфиденциальности</a>
+          <a href="" class="text">Пользовательское соглашение</a>
+        </div>
       </nav>
-      <button class="header__burger"></button>
+      <button class="header__nav_open"></button>
     </section>
   </header>
   <main>
@@ -586,6 +591,70 @@
           <p class="text">Совместная работа с большим количеством провайдеров всего мира напрямую позволяет нам выставлять одни из самых низких цен на прокси-серверы. А если вы выступаете как оптовый покупатель, то у нас есть еще более интересные предложения. Покупая прокси в большом количестве, вы можете получить скидку до -60% на весь объём.</p>
           <p class="text">Всегда можно попробовать наши прокси на тест, взяв 1 шт на минимальный срок. Тогда у вас не останется сомнений по поводу высокого качества прокси-серверов сервиса Locations.Market.</p>
         </div>
+      </section>
+    </section>
+    <section class="overlay"></section>
+    <section class="popup">
+      <section class="popup__login">
+        <svg class="popup__close" width="20" height="20"></svg>
+        <h2 class="popup__title">Войти</h2>
+        <form action="" class="popup__form">
+          <label class="popup__label">
+            <span class="popup__label_title">E-mail</span>
+            <span class="popup__label_error">Неверный e-mail</span>
+            <input type="email" class="popup__input popup__input_invalid" value="sergh.g@gmail.com">
+          </label>
+          <label class="popup__label">
+            <span class="popup__label_title">Пароль</span>
+            <input type="password" class="popup__input" value="123456789">
+          </label>
+          <button type="submit" class="submit_light">Войти</button>
+        </form>
+        <p class="popup__text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных. <a href="">Политика конфидециальности</a></p>
+        <a href="" class="popup__link">Я забыл пароль</a>
+        <a href="" class="popup__link">Зарегистрироваться</a>
+      </section>
+      <section class="popup__registration">
+        <svg class="popup__close" width="20" height="20"></svg>
+        <h2 class="popup__title">Зарегистрироваться</h2>
+        <form action="" class="popup__form">
+          <label class="popup__label">
+            <span class="popup__label_title">E-mail</span>
+            <input type="email" class="popup__input" value="sergh.g@gmail.com">
+          </label>
+          <label class="popup__label">
+            <span class="popup__label_title">Пароль</span>
+            <input type="password" class="popup__input" value="123456789">
+          </label>
+          <label class="popup__label">
+            <span class="popup__label_title">Повторите Пароль</span>
+            <input type="password" class="popup__input" value="123456789">
+          </label>
+          <button type="submit" class="submit_light">Зарегистрироваться</button>
+        </form>
+        <p class="popup__text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных. <a href="">Политика конфидециальности</a></p>
+        <a href="" class="popup__link">Уже есть аккаунт</a>
+      </section>
+      <section class="popup__feedback">
+        <svg class="popup__close" width="20" height="20"></svg>
+        <h2 class="popup__title">Оставить отзыв</h2>
+        <form action="" class="popup__form">
+          <label class="popup__label">
+            <span class="popup__label_title">Имя</span>
+            <input type="text" class="popup__input" value="sergh.g@gmail.com">
+          </label>
+          <label class="popup__label">
+            <span class="popup__label_title">E-mail (не публикуется)</span>
+            <input type="email" class="popup__input">
+          </label>
+          <label class="popup__label">
+            <span class="popup__label_title">Текст отзыва</span>
+            <textarea name="" id="" class="popup__textarea"></textarea>
+          </label>
+          <button type="submit" class="submit_light">Отправить</button>
+        </form>
+        <p class="popup__text">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных. <a href="">Политика конфидециальности</a></p>
+        <p class="popup__text">Внимание! Текст публикуется после проверки модератором</p>
       </section>
     </section>
   </main>

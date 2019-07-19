@@ -2,7 +2,7 @@
 
 .partner {
   display: flex;
-  width: 100vw;
+  width: 100%;
 
   .title {
     margin-bottom: 34px;
@@ -29,6 +29,20 @@
 @media (max-width: $tablet) {
   .partner {
     flex-direction: column;
+  }
+}
+
+@media (max-width: $mobile) {
+  .partner {
+    margin-bottom: 69px;
+    .title {
+      margin-bottom: 24px;
+    }
+    .text {
+      &:last-of-type {
+        margin-bottom: 32px;
+      }
+    }
   }
 }
 
@@ -79,6 +93,7 @@
     min-height: 235px;
     &:first-child {
       width: 100%;
+      margin-bottom: 39px;
       padding: 0;
       background-position: left center;
       background-size: 250px 260px;

@@ -12,6 +12,12 @@
   }
 }
 
+@media (max-width: $mobile) {
+  .feedback {
+    margin-bottom: 74px;
+  }
+}
+
 .feedback__container {
   display: flex;
   flex-direction: column;
@@ -50,9 +56,14 @@
 
 @media (max-width: $mobile) {
   .feedback__container {
+    padding: 68px 0 72px;
 
     .title {
       text-align: center;
+    }
+
+    .subtitle {
+      margin-bottom: 34px;
     }
 
     .submit_dark {
@@ -73,6 +84,12 @@
 @media (max-width: $tablet) {
   .feedback__slider {
     margin-bottom: 57px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .feedback__slider {
+    margin-bottom: 40px;
   }
 }
 

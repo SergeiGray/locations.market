@@ -10,6 +10,12 @@
   }
 }
 
+@media (max-width: $mobile) {
+  .api {
+    margin-bottom: 71px;
+  }
+}
+
 .api__container {
   display: flex;
   align-items: flex-start;
@@ -60,6 +66,10 @@
     .text {
       width: 100%;
       text-align: center;
+
+      &:last-of-type {
+        margin-bottom: 32px;
+      }
     }
     .submit_light {
       min-width: 100%;
@@ -88,7 +98,7 @@
 
 @media (max-width: $mobile) {
   .api__content {
-    padding-top: 240px;
+    padding-top: 234px;
     padding-left: 0;
     margin-left: 0;
     background-position: top center;
