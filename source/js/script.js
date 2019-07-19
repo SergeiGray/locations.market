@@ -16,22 +16,110 @@
 
   let hangFlexslider = function () {
     $(document).ready(function() {
-      $('.feedback__slider').flexslider({
-        selector: ".feedback__slider_container > li",
-        animation: "slide",
-        slideshow: false,
-        smoothHeight: true,
-        keyboard: true,
-        prevText: "",
-        nextText: "",
-        itemWidth: 350,
-        itemMargin: 40,
-        minItems: 1,
-        maxItems: 3,
-        controlNav: false
-      });
+      if($(window).width() > 1190) {
+        $('.feedback__slider').flexslider({
+          selector: ".feedback__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemWidth: 350,
+          itemMargin: 40,
+          minItems: 1,
+          maxItems: 3,
+          controlNav: false,
+          touch: true,
+          move: 1
+        });
+        $('.landing__slider').flexslider({
+          selector: ".landing__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemWidth: 145,
+          itemMargin: 60,
+          minItems: 1,
+          maxItems: 3,
+          controlNav: false,
+          touch: true,
+          move: 1
+        });
+      };
+      if($(window).width() < 750) {
+        $('.feedback__slider').flexslider({
+          selector: ".feedback__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemWidth: 220,
+          itemMargin: 25,
+          minItems: 1,
+          maxItems: 3,
+          controlNav: false,
+          touch: true,
+          move: 1
+        });
+        $('.landing__slider').flexslider({
+          selector: ".landing__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemWidth: 100,
+          itemMargin: 25,
+          minItems: 2,
+          maxItems: 6,
+          controlNav: false,
+          touch: true,
+          move: 1
+        });
+      };
+      if($(window).width() < 1190) {
+        $('.feedback__slider').flexslider({
+          selector: ".feedback__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemWidth: 300,
+          itemMargin: 25,
+          minItems: 1,
+          maxItems: 3,
+          controlNav: false,
+          touch: true,
+          move: 1
+        });
+        $('.landing__slider').flexslider({
+          selector: ".landing__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemWidth: 100,
+          itemMargin: 60,
+          minItems: 4,
+          maxItems: 6,
+          controlNav: false,
+          touch: true,
+          move: 1
+        });
+      };
     });
-  }
+  };
 
   let getSlider = function () {
     $('.questions__answer_title').click( function (evt) {

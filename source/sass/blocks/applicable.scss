@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: $tablet) {
+@media (max-width: $mobile) {
   .applicable__content {
     width: 290px;
     align-items: center;
@@ -112,6 +112,8 @@
 @media (max-width: $tablet) {
   .applicable__icons {
     justify-content: center;
+    min-width: 380px;
+    max-width: 760px;
   }
 }
 
