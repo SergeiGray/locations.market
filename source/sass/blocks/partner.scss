@@ -34,7 +34,7 @@
 
 @media (max-width: $mobile) {
   .partner {
-    margin-bottom: 69px;
+
     .title {
       margin-bottom: 24px;
     }
@@ -93,14 +93,13 @@
     min-height: 235px;
     &:first-child {
       width: 100%;
-      margin-bottom: 39px;
       padding: 0;
       background-position: left center;
       background-size: 250px 260px;
     }
     &:last-child {
       width: 100%;
-      padding: 0;
+      padding: 39px 0 69px;
       align-items: center;
 
       .text {

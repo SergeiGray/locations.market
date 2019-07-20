@@ -26,13 +26,13 @@
   .header__nav {
     display: none;
     position: absolute;
+    z-index: 11;
     top: 0;
     right: 0;
     width: 360px;
     min-height: 500px;
     height: 100vh;
     box-sizing: border-box;
-    z-index: 5;
     padding: 31px 28px 48px;
     flex-direction: column;
     background-color: #2C2525;
