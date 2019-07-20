@@ -139,16 +139,68 @@
   };
 
   let showHeaderNav = function () {
-    $('.header__nav_close, .overlay').click(function (){
-      $('.header__nav, .overlay').css({'opacity': 0, 'display': 'none'});
+    if($(window).width() < 1190) {
+      $('.header__nav_close, .overlay').click(function (){
+        $('.header__nav, .overlay').css({'opacity': 0, 'display': 'none'});
+      });
+      $('.header__nav_open').click(function (event){
+        event.preventDefault();
+        $('.header__nav, .overlay').css({'opacity': 1, 'display': 'flex'});
+        $(document).keydown(function(event) {
+            if (event.keyCode === 27) {
+                event.stopPropagation();
+                $('.header__nav, .overlay').css({'opacity': 0, 'display': 'none'});
+            }
+        });
+      });
+    };
+  };
+
+  let showPopUpLogIn = function () {
+    $('.popup__close, .overlay').click(function (){
+      $('.popup__login, .overlay').css({'opacity': 0, 'display': 'none'});
     });
-    $('.header__nav_open').click(function (event){
+    $('.popup__login_open').click(function (event){
       event.preventDefault();
-      $('.header__nav, .overlay').css({'opacity': 1, 'display': 'flex'});
+      $('.popup__registration').css({'display': 'none'});
+      $('.popup__login, .overlay').css({'opacity': 1, 'display': 'flex'});
       $(document).keydown(function(event) {
           if (event.keyCode === 27) {
               event.stopPropagation();
-              $('.header__nav, .overlay').css({'opacity': 0, 'display': 'none'});
+              $('.popup__login, .overlay').css({'opacity': 0, 'display': 'none'});
+          }
+      });
+    });
+  };
+
+  let showPopUpRegistration = function () {
+    $('.popup__close, .overlay').click(function (){
+      $('.popup__registration, .overlay').css({'opacity': 0, 'display': 'none'});
+    });
+    $('.popup__registration_open').click(function (event){
+      event.preventDefault();
+      $('.popup__login').css({'display': 'none'});
+      $('.popup__registration, .overlay').css({'opacity': 1, 'display': 'flex'});
+      $(document).keydown(function(event) {
+          if (event.keyCode === 27) {
+              event.stopPropagation();
+              $('.popup__registration, .overlay').css({'opacity': 0, 'display': 'none'});
+          }
+      });
+    });
+  };
+
+  let showPopUpFeedback = function () {
+    $('.popup__close, .overlay').click(function (){
+      $('.popup__feedback, .overlay').css({'opacity': 0, 'display': 'none'});
+    });
+    $('.popup__feedback_open').click(function (event){
+      event.preventDefault();
+      $('.popup__feedback, .overlay').css({'opacity': 1, 'display': 'flex'});
+      $(document).keydown(function(event) {
+          if (event.keyCode === 27) {
+              event.stopPropagation();
+              $('.popup__feedback, .overlay').css({'opacity': 0, 'display': 'none'});
           }
       });
     });
@@ -160,5 +212,8 @@
   getSlider();
   getLink();
   showHeaderNav();
+  showPopUpLogIn();
+  showPopUpRegistration();
+  showPopUpFeedback();
 
 })();
