@@ -2,19 +2,21 @@
 
 (function () {
 
-  let hangSelect2 = function () {
+  var hangSelect2 = function () {
     $(document).ready(function() {
       $('.select_unit').select2();
     });
   };
 
-  let scrollBarСustomization = function () {
-    $('body').overlayScrollbars({
-      className: "os-theme-dark"
-    });
-  }
+  var scrollBarСustomization = function () {
+    if($(window).width() > 1190) {
+      $('body').overlayScrollbars({
+        className: "os-theme-dark"
+      });
+    };
+  };
 
-  let hangFlexslider = function () {
+  var hangFlexslider = function () {
     $(document).ready(function() {
       if($(window).width() > 1190) {
         $('.feedback__slider').flexslider({
@@ -121,7 +123,7 @@
     });
   };
 
-  let getSlider = function () {
+  var getSlider = function () {
     $('.questions__answer_title').click( function (evt) {
       evt.preventDefault();
       $(evt.target).parents('.questions__answer').find('.questions__answer_text').slideToggle('slow');
@@ -129,7 +131,7 @@
     });
   };
 
-  let getLink = function () {
+  var getLink = function () {
     $('.landing__button_promo').click( function (evt) {
       evt.preventDefault();
       $('.landing__button_promo').addClass('display_none');
@@ -138,7 +140,7 @@
     });
   };
 
-  let showHeaderNav = function () {
+  var showHeaderNav = function () {
     if($(window).width() < 1190) {
       $('.header__nav_close, .overlay').click(function (){
         $('.header__nav, .overlay').css({'opacity': 0, 'display': 'none'});
@@ -156,7 +158,7 @@
     };
   };
 
-  let showPopUpLogIn = function () {
+  var showPopUpLogIn = function () {
     $('.popup__close, .overlay').click(function (){
       $('.popup__login, .overlay').css({'opacity': 0, 'display': 'none'});
     });
@@ -173,7 +175,7 @@
     });
   };
 
-  let showPopUpRegistration = function () {
+  var showPopUpRegistration = function () {
     $('.popup__close, .overlay').click(function (){
       $('.popup__registration, .overlay').css({'opacity': 0, 'display': 'none'});
     });
@@ -190,7 +192,7 @@
     });
   };
 
-  let showPopUpFeedback = function () {
+  var showPopUpFeedback = function () {
     $('.popup__close, .overlay').click(function (){
       $('.popup__feedback, .overlay').css({'opacity': 0, 'display': 'none'});
     });
@@ -216,4 +218,4 @@
   showPopUpRegistration();
   showPopUpFeedback();
 
-})();
+}());

@@ -375,6 +375,7 @@
   box-sizing: border-box;
   background: #FFFFFF;
   border: none;
+  border-radius: 0;
 }
 
 @media (max-width: $tablet) {
@@ -394,6 +395,7 @@
   height: 78px;
   background: #FFFFFF;
   border: none;
+  border-radius: 0;
   resize: none;
 }
 

@@ -32,7 +32,6 @@
     padding-top: 75px;
     margin-bottom: 12px;
     position: relative;
-    z-index: -1;
     background-color: transparent;
     background-image: none;
   }
@@ -315,8 +314,12 @@
   }
 }
 
-.landing__form_col:last-child {
+.landing__form_col {
   align-self: flex-start;
+
+  &:last-of-type {
+    min-height: 60px;
+  }
 }
 
 .landing__price_big {
@@ -347,6 +350,10 @@
   background-position: right center;
   background-color: transparent;
   border: none;
+}
+
+.landing__form .landing__label_promo {
+  margin-bottom: 0;
 }
 
 .landing__form_link {
