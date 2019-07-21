@@ -1,0 +1,16 @@
+@mixin flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin font_Roboto {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+@mixin font_Bebas {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+}
+
+@mixin font_Ubuntu {
+  font-family: "Ubuntu", "Arial", sans-serif;
+}

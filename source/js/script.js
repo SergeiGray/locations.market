@@ -10,10 +10,15 @@
 
   var scrollBarСustomization = function () {
     if($(window).width() > 1190) {
-      $('body').overlayScrollbars({
-        className: "os-theme-dark"
+      $('body').niceScroll({
+        cursorborder: "none"
       });
     };
+    $('.select_unit').click( function () {
+      $('.select2-results__options').niceScroll({
+        cursorborder: "none"
+      });
+    });
   };
 
   var hangFlexslider = function () {
