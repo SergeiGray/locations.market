@@ -181,12 +181,115 @@
     background-color: transparent;
     border: none;
     text-decoration: underline;
+    font-size: 12px;
+    line-height: 140%;
+    color: #595959;
+  }
+}
+
+.my_proxy__tbody {
+  max-height: calc(100vh - 270px);
+
+  .my_proxy__login,
+  .my_proxy__pas {
+    span {
+      width: 95px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-align: left;
+    }
+  }
+
+  .my_proxy__date {
+    color: #4995FF;
+  }
+
+  .my_proxy__connected {
+
+    span {
+      position: relative;
+      padding-left: 12px;
+      line-height: 100%;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        margin-top: -3px;
+        background-color: #4995FF;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .my_proxy__disconnected{
+
+    span {
+      position: relative;
+      padding-left: 12px;
+      line-height: 100%;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        margin-top: -3px;
+        background-color: #FF3501;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .my_proxy__working {
+    color: #4995FF;
+  }
+
+  .my_proxy__not_working {
+    color: #FF3501;
   }
 }
 
 
+.my_proxy__row {
+
+  &:hover {
+    background-color: #F7F7F7;
+
+    &:first-child {
+      border-top: 1px solid #E6E6E6;
+    }
+  }
+}
+
+.my_proxy__tfoot {
+  .main__footer_col {
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+}
+
+.my_proxy__footer_link {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #666666;
+  text-decoration: none;
+
+  .my_proxy__icon {
+    margin-right: 7px;
+  }
+}
 
 
+// ---filter---
 
 
 
