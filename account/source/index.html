@@ -11,8 +11,1227 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <header></header>
-  <main></main>
+  <header>
+    <section class="wrapper header__container">
+      <a href="index.html" class="logo">
+        <svg class="logo__icon" width="25" height="33">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+        <span class="logo__text_container">
+          <span>locations.</span><span>market</span>
+        </span>
+      </a>
+      <div class="header__account">
+        <a href="" class="header__account_link">
+          <svg class="header__account_icon" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-account"></use>
+          </svg>
+          <span class="header__account_name">sergh.g@gmail.com</span>
+        </a>
+        <a href="" class="header__account_link">
+          <svg class="header__account_icon" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-account"></use>
+          </svg>
+          <span class="header__account_balance">1560 руб.</span>
+        </a>
+        <a href="" class="header__account_link">
+          <svg class="header__account_icon" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-account"></use>
+          </svg>
+          <span class="header__account_setting">Настройки</span>
+        </a>
+      </div>
+      <button class="header__logout">Выйти</button>
+    </section>
+  </header>
+  <main>
+    <nav class="nav">
+      <section class="wrapper nav__container">
+        <ul class="nav__list">
+          <li class="nav__item nav__active">
+            <a href="" class="nav__link">
+              Мои прокси
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Партнёрка
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              История
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Чекер
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Поддержка IPv6
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Конвертер
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <span>Помощь</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <section class="my_proxy">
+      <section class="wrapper my_proxy__container">
+        <h2 class="title">Мои прокси</h2>
+        <nav class="my_proxy__navigation">
+          <ul class="my_proxy__list">
+            <input id="show__none" type="radio" name="my_proxy__nav_check" class="input" checked="">
+            <li class="my_proxy__navigation_item">
+              <input id="show__filter" type="radio" name="my_proxy__nav_check" class="input">
+              <label for="show__filter" class="my_proxy__link show__filter">
+                <svg class="my_proxy__icon" width="15" height="15">
+                  <use xlink:href="img/sprite.svg#icon-filter"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="my_proxy__navigation_item">
+              <input id="show__choose" type="radio" name="my_proxy__nav_check" class="input">
+              <label for="show__choose" class="my_proxy__link show__choose">
+                Выбрать
+              </label>
+            </li>
+            <li class="my_proxy__navigation_item">
+              <input id="show__change" type="radio" name="my_proxy__nav_check" class="input">
+              <label for="show__change" class="my_proxy__link show__change">
+                Изменить
+              </label>
+            </li>
+            <li class="my_proxy__navigation_item">
+              <input id="show__auth" type="radio" name="my_proxy__nav_check" class="input">
+              <label for="show__auth" class="my_proxy__link show__auth">
+                Авторизация
+              </label>
+            </li>
+            <li class="my_proxy__navigation_item">
+              <input id="show__export" type="radio" name="my_proxy__nav_check" class="input">
+              <label for="show__export" class="my_proxy__link show__export">
+                Экспорт
+              </label>
+            </li>
+            <li class="my_proxy__navigation_item">
+              <input id="show__prolong" type="radio" name="my_proxy__nav_check" class="input">
+              <label for="show__prolong" class="my_proxy__link show__prolong">
+                  Продлить
+              </label>
+            </li>
+            <li class="my_proxy__navigation_item">
+              <input id="show__history" type="radio" name="my_proxy__nav_check" class="input">
+              <label for="show__history" class="my_proxy__link show__history">
+                  История
+              </label>
+            </li>
+            <li class="my_proxy__navigation_item">
+              <input id="show__buy" type="radio" name="my_proxy__nav_check" class="input">
+              <label for="show__buy" class="my_proxy__link show__buy">
+                  Купить
+              </label>
+            </li>
+          </ul>
+        </nav>
+        <section class="my_proxy__filter display_none">1</section>
+        <section class="my_proxy__choose display_none">2</section>
+        <section class="my_proxy__change display_none">3</section>
+        <section class="my_proxy__auth display_none">4</section>
+        <section class="my_proxy__export display_none">5</section>
+        <section class="my_proxy__prolong display_none">6</section>
+        <table class="main__table">
+          <thead class="my_proxy__thead">
+            <tr class="main__header_row">
+              <th class="main__header_col my_proxy__check">
+                <input id="main__checkbox_0" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_0" class="main__checkbox_label">
+                </label>
+              </th>
+              <th class="main__header_col my_proxy__type">
+                <select name="" id="" class="my_proxy__type_select">
+                  <option value="All">все</option>
+                  <option value="IPv6">IPv6</option>
+                  <option value="IPv4">IPv4</option>
+                  <option value="Shared IPv4">Shared IPv4</option>
+                </select>
+              </th>
+              <th class="main__header_col my_proxy__country">Страна</th>
+              <th class="main__header_col my_proxy__port">IP</th>
+              <th class="main__header_col my_proxy__https">Https</th>
+              <th class="main__header_col my_proxy__protocol">Socks</th>
+              <th class="main__header_col my_proxy__login">Логин</th>
+              <th class="main__header_col my_proxy__pas">Пароль</th>
+              <th class="main__header_col my_proxy__date">Срок</th>
+              <th class="main__header_col my_proxy__coment">Комментарий</th>
+              <th class="main__header_col my_proxy__verification">Чекнуть</th>
+              <th class="main__header_col my_proxy__autoprolong">Автопродл.</th>
+              <th class="main__header_col my_proxy__hide"></th>
+            </tr>
+          </thead>
+          <tbody class="my_proxy__tbody">
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_1" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_1" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__type">IPv6</td>
+              <td class="main__col my_proxy__country">Россия</td>
+              <td class="main__col my_proxy__port">5.188.181.246</td>
+              <td class="main__col my_proxy__https">1050</td>
+              <td class="main__col my_proxy__protocol">SOCKS</td>
+              <td class="main__col my_proxy__login">lGr3NJWT</td>
+              <td class="main__col my_proxy__pas">hdSyZ1gH</td>
+              <td class="main__col my_proxy__date">23д 15ч</td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
+                <label for="" class="main__coment_label">
+                  Этот прокси периодически барахлит. Держать на контроле
+                </label>
+              </td>
+              <td class="main__col my_proxy__verification">Проверить</td>
+              <td class="main__col my_proxy__autoprolong">подкл.</td>
+              <td class="main__col my_proxy__hide">
+                <button>Скрыть</button>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_2" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_2" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-brazil"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>IPv6</span>
+              </td>
+              <td class="main__col my_proxy__protocol">
+                <span>SOCKS</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
+                <label for="" class="main__coment_label">
+                  Этот прокси периодически барахлит. Держать на контроле
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_3" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_3" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-canada"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>IPv6</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
+                <label for="" class="main__coment_label">
+                  Продлевать
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_4" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_4" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-china"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>IPv6</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_5" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_5" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-czech"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
+                <label for="" class="main__coment_label">
+                  Продлевать
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick-error"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_6" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_6" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-estonia"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon my_proxy__icon_active" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_7" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_7" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-france"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon my_proxy__icon_active" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_8" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_8" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-germany"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon my_proxy__icon_active" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_8" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_8" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-india"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text">Продлевать</textarea>
+                <label for="" class="main__coment_label">
+                  Продлевать
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_9" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_9" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-japan"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+">Продлевать</textarea>
+                <label for="" class="main__coment_label">
+                  Продлевать
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_10" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-kazakhstan"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_10" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-netherlands"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_10" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-romania"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_10" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-russia"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_10" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-singapore"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_10" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-spain"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_10" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-turkey"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_10" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-ukraine"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_10" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-united-kingdom"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_10" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_10" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-united-states"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>1050</span>
+              </td>
+              <td class="main__col my_proxy__protocol my_proxy__protocol_none_data">
+                <span>-</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+"></textarea>
+                <label for="" class="main__coment_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr class="my_proxy__row">
+              <td class="main__col my_proxy__check">
+                <input id="main__checkbox_1" type="checkbox" name="" class="main__checkbox">
+                <label for="main__checkbox_1" class="main__checkbox_label">
+                </label>
+              </td>
+              <td class="main__col my_proxy__country">
+                <svg class="main__table_icon" width="21" height="14">
+                  <use xlink:href="img/sprite-flag.svg#icon-flag-pt"></use>
+                </svg>
+              </td>
+              <td class="main__col my_proxy__port">
+                <span>5.188.181.246:1050</span>
+              </td>
+              <td class="main__col my_proxy__type">
+                <span>IPv6</span>
+              </td>
+              <td class="main__col my_proxy__protocol">
+                <span>SOCKS</span>
+              </td>
+              <td class="main__col my_proxy__login">
+                <span>lGr3NJWT</span>
+              </td>
+              <td class="main__col my_proxy__pas">
+                <span>hdSyZ1gH</span>
+              </td>
+              <td class="main__col my_proxy__date">
+                <span>23д 15ч</span>
+              </td>
+              <td class="main__col my_proxy__coment">
+                <textarea name="" id="" maxlength="170" class="main__coment_text" placeholder="+">Этот прокси периодически барахлит. Держать на контроле</textarea>
+                <label for="" class="main__coment_label">
+                  Этот прокси периодически барахлит. Держать на контроле
+                </label>
+              </td>
+              <td class="main__col my_proxy__action">
+                <svg class="my_proxy__icon" width="17" height="17">
+                  <title>Скрыть прокси из списка</title>
+                  <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Включить автопродление</title>
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+                <svg class="my_proxy__icon" width="13" height="13">
+                  <title>Проверить прокси</title>
+                  <use xlink:href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot class="my_proxy__tfoot">
+            <tr class="main__footer_row">
+              <td class="main__footer_col">
+                <a href="" class="my_proxy__footer_link">
+                  <svg class="my_proxy__icon" width="16" height="16">
+                    <use xlink:href="img/sprite.svg#icon-invisible"></use>
+                  </svg>
+                  Показать скрытые прокси
+                </a>
+              </td>
+              <td class="main__footer_col">
+                <span class="main__footer_text">Строк на странице</span>
+                <select name="" id="" class="main__footer_select">
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="150">150</option>
+                </select>
+              </td>
+              <td class="main__footer_col">
+                <span class="main__footer_text">1-10 из 10</span>
+                <div class="main__change_page">
+                  <a href="" class="main__prev_page">
+                    <span>&#8249</span>
+                  </a>
+                  <a href="" class="main__next_page">
+                    <span>&#8250</span>
+                  </a>
+                </div>
+
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </section>
+
+
+  </main>
   <footer></footer>
 
 

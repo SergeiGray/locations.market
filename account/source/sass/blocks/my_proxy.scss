@@ -1,0 +1,199 @@
+// ---MY PROXY---
+
+.my_proxy {
+  width: 100%;
+}
+
+.my_proxy__navigation {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.my_proxy__navigation  .input {
+  display: none;
+}
+
+.my_proxy__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.my_proxy__navigation_item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  margin-top: 2px;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:nth-of-type(6) {
+    margin-right: auto;
+  }
+}
+
+.my_proxy__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35px;
+  min-width: 100px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border: 1px solid #BABABA;
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #595959;
+}
+
+.show__filter {
+  min-width: 35px;
+  padding: 0;
+}
+
+.show__prolong {
+  color: #EF081F;
+  border-color: #EF081F;
+}
+
+.show__buy {
+  background-color: #EF081F;
+  border: none;
+  color: #FFFFFF;
+}
+
+.my_proxy__icon {
+  fill: #B3B3B3;
+}
+
+.my_proxy__link_active {
+  border: none;
+  background-color: #EF081F;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.my_proxy__filter,
+.my_proxy__choose,
+.my_proxy__change,
+.my_proxy__auth,
+.my_proxy__export,
+.my_proxy__prolong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.my_proxy__type_select {
+  @include font_Ubuntu;
+  width: 65px;
+  height: 24px;
+  box-sizing: border-box;
+  padding-left: 8px;
+  appearance: none;
+  font-size: 14px;
+  line-height: 130%;
+  color: #999999;
+  background-color: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.my_proxy__check {
+  width: 52px;
+  padding-left: 17px;
+}
+
+.my_proxy__type {
+  width: 90px;
+}
+
+.my_proxy__country {
+  width: 73px;
+}
+
+.my_proxy__port {
+  width: 120px;
+}
+
+.my_proxy__https {
+  width: 60px;
+}
+
+.my_proxy__protocol {
+  width: 67px;
+}
+
+.my_proxy__login {
+  width: 115px;
+}
+
+.my_proxy__pas {
+  width: 115px;
+}
+
+.my_proxy__date {
+  width: 70px;
+}
+
+.my_proxy__coment {
+  width: 120px;
+}
+
+.my_proxy__verification {
+  width: 100px;
+}
+
+.my_proxy__autoprolong {
+  width: 95px;
+}
+
+.my_proxy__hide {
+  flex-grow: 1;
+
+  button {
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.display_none {
+  display: none;
+}

@@ -1,17 +1,7 @@
-@import "variables.scss";
 @import "mixins.scss";
 @import "scaffolding.scss";
 @import "fonts.scss";
 /*blocks*/
 @import "blocks/header.scss";
-@import "blocks/landing.scss";
-@import "blocks/benefits.scss";
-@import "blocks/applicable.scss";
-@import "blocks/api.scss";
-@import "blocks/partner.scss";
-@import "blocks/feedback.scss";
-@import "blocks/questions.scss";
-@import "blocks/news.scss";
-@import "blocks/about.scss";
-@import "blocks/popup.scss";
-@import "blocks/footer.scss";
+@import "blocks/navigation.scss";
+@import "blocks/my_proxy.scss";
