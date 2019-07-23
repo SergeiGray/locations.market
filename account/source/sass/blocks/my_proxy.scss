@@ -2,6 +2,10 @@
 
 .my_proxy {
   width: 100%;
+
+  .title {
+    margin-bottom: 30px;
+  }
 }
 
 .my_proxy__navigation {
@@ -57,6 +61,7 @@
   min-width: 100px;
   padding: 0 15px;
   box-sizing: border-box;
+  background-color: #FFFFFF;
   border: 1px solid #BABABA;
   border-radius: 3px;
   font-size: 11px;
@@ -65,6 +70,16 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #595959;
+
+  &:hover {
+    background-color: #FAFAFA;
+    border: 1px solid #BABABA;
+    color: #EF081F;
+
+    .my_proxy__icon {
+      fill: #EF081F;
+    }
+  }
 }
 
 .show__filter {
@@ -88,14 +103,25 @@
 }
 
 .my_proxy__link_active {
-  border: none;
+  border: 1px solid #EF081F;
   background-color: #EF081F;
   color: #FFFFFF;
-  fill: #FFFFFF;
+
+  &:hover {
+    border: 1px solid #EF081F;
+    background-color: #EF081F;
+    color: #FFFFFF;
+
+    .my_proxy__icon {
+      fill: #FFFFFF;
+    }
+  }
+
+  .my_proxy__icon {
+    fill: #FFFFFF;
+  }
 }
 
-.my_proxy__filter,
-.my_proxy__choose,
 .my_proxy__change,
 .my_proxy__auth,
 .my_proxy__export,
@@ -290,6 +316,309 @@
 
 
 // ---filter---
+
+.my_proxy__filter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .main__checkbox_label {
+    margin-left: 27px;
+
+    &:after {
+      left: -27px;
+    }
+  }
+
+  .subtitle {
+    margin-bottom: 17px;
+  }
+
+  .button_red {
+    margin-right: 20px;
+  }
+
+  .button_white {
+    margin-right: auto;
+  }
+}
+
+.my_proxy__filter_form > .my_proxy__filter_row:first-child {
+  margin-bottom: 12px;
+}
+
+.my_proxy__filter_row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.my_proxy__filter_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.my_proxy__filter_col_active {
+  width: 260px;
+
+  .my_proxy__filter_container {
+    min-width: 90px;
+    box-sizing: border-box;
+
+    &:nth-child(1) {
+      margin-right: 20px;
+      margin-bottom: 13px;
+    }
+    &:nth-child(2) {
+      margin-right: auto;
+    }
+    &:nth-child(3) {
+      margin-right: 20px;
+    }
+    &:nth-child(4) {
+      margin-right: auto;
+    }
+  }
+}
+
+.my_proxy__filter_col_version {
+  width: 175px;
+
+  .my_proxy__filter_container {
+    min-width: 55px;
+    box-sizing: border-box;
+
+    &:nth-child(1) {
+      margin-right: 20px;
+      margin-bottom: 13px;
+    }
+    &:nth-child(2) {
+      margin-right: auto;
+    }
+    &:nth-child(3) {
+      margin-right: auto;
+    }
+  }
+}
+
+.my_proxy__filter_col_type {
+  width: 70px;
+
+  .my_proxy__filter_container {
+
+    &:nth-child(1) {
+      margin-right: auto;
+      margin-bottom: 13px;
+    }
+    &:nth-child(2) {
+      margin-right: auto;
+    }
+  }
+}
+
+.my_proxy__filter_col_coment {
+
+  .my_proxy__filter_row {
+    flex-direction: column;
+
+    .my_proxy__filter_container {
+
+      &:nth-child(1) {
+        margin-right: auto;
+        margin-bottom: 13px;
+      }
+    }
+  }
+}
+
+.my_proxy__filter_col_autoprolong {
+
+  .my_proxy__filter_row {
+    flex-direction: column;
+
+    .my_proxy__filter_container {
+
+      &:nth-child(1) {
+        margin-right: auto;
+        margin-bottom: 13px;
+      }
+    }
+  }
+}
+
+.my_proxy__filter {
+
+  .select {
+    min-width: 215px;
+  }
+
+  .select__label:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.my_proxy__filter .my_proxy__filter_select,
+.my_proxy__filter .select2-container,
+.my_proxy__filter .select2-selection__rendered {
+  width: 215px !important;
+}
+
+// ---choose---
+
+.my_proxy__choose {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .link {
+    text-decoration: none;
+    color: #FF151F;
+  }
+
+  .text {
+    margin-right: 13px;
+
+    &.last {
+      margin-right: 8px;
+
+    }
+  }
+
+  .select_label {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .select,
+  .select2-container,
+  .select2-selection__rendered {
+    min-width: 125px !important;
+  }
+
+  .form {
+    flex-wrap: nowrap;
+  }
+
+  .group {
+    margin-right: 30px;
+
+    .select_label {
+      margin-right: 20px;
+    }
+  }
+
+  .search {
+    margin-right: 25px;
+
+    .select_label:last-of-type {
+      z-index: 0;
+      position: relative;
+      margin-left: -4px;
+
+    }
+
+    .select_label:last-of-type::after {
+      content: '';
+      position: absolute;
+      height: 26px;
+      width: 1px;
+      top: 4px;
+      left: 5px;
+      background-color: #D9D9D9;
+    }
+
+    .input {
+      z-index: 0;
+      width: 210px;
+      margin-right: 20px;
+      box-sizing: border-box;
+      padding-left: 16px;
+      border-radius: 0 3px 3px 0;
+      border-left: none;
+      font-size: 13px;
+      color: #666666;
+    }
+  }
+
+  .icon_container {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:hover::before {
+      @include font_Ubuntu;
+      content: 'Поиск списком помогает найти нужные прокси, используя множество параметров или список из прокси';
+      position: absolute;
+      left: -225px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      box-sizing: border-box;
+      width: 210px;
+      padding: 20px 24px 24px 28px;
+      border-radius: 5px;
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+      background-color: #524B4B;
+      color: #FFFFFF;
+      font-size: 13px;
+      line-height: 130%;
+    }
+
+    &:hover::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: -20px;
+      background-color: #524B4B;
+      transform: rotate(-45deg);
+    }
+
+    .icon {
+      fill: #CCCCCC;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

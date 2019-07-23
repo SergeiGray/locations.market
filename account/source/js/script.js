@@ -17,6 +17,12 @@
       cursorcolor: "#CCCCCC",
       cursorborder: "none"
     });
+    $('.select').click( function () {
+      $('.select2-results__options').niceScroll({
+      cursorcolor: "#CCCCCC",
+      cursorborder: "none"
+      });
+    });
   }
 
   var getShowInMyProxy = function () {

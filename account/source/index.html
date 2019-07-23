@@ -145,24 +145,150 @@
           </ul>
         </nav>
         <section class="my_proxy__filter display_none">
-          <div class="my_proxy__filter_col">
-            <h2 class="subtitle">Активность</h2>
-          </div>
-          <div class="my_proxy__filter_col">
-            <h2 class="subtitle">Версия</h2>
-          </div>
-          <div class="my_proxy__filter_col">
-            <h2 class="subtitle">Тип</h2>
-          </div>
-          <div class="my_proxy__filter_col">
-            <h2 class="subtitle">Комментарий</h2>
-          </div>
-          <div class="my_proxy__filter_col">
-            <h2 class="subtitle">Автопродление</h2>
-          </div>
-          <div class="my_proxy__filter_col"></div>
+          <form action="" class="my_proxy__filter_form">
+            <div class="my_proxy__filter_row">
+              <div class="my_proxy__filter_col my_proxy__filter_col_active">
+                <h2 class="subtitle">Активность</h2>
+                <div class="my_proxy__filter_row">
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_active" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_active" class="main__checkbox_label">Активные</label>
+                  </div>
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_prolong" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_prolong" class="main__checkbox_label">Требуют продления</label>
+                  </div>
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_visible" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_visible" class="main__checkbox_label">Видимые</label>
+                  </div>
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_hidden" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_hidden" class="main__checkbox_label">Скрытые</label>
+                  </div>
+                </div>
+              </div>
+              <div class="my_proxy__filter_col my_proxy__filter_col_version">
+                <h2 class="subtitle">Версия</h2>
+                <div class="my_proxy__filter_row">
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_ipv6" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_ipv6" class="main__checkbox_label">IPv6</label>
+                  </div>
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_sharedipv4" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_sharedipv4" class="main__checkbox_label">Shared IPv4</label>
+                  </div>
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_ipv4" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_ipv4" class="main__checkbox_label">IPv4</label>
+                  </div>
+                </div>
+              </div>
+              <div class="my_proxy__filter_col
+              my_proxy__filter_col_type">
+                <h2 class="subtitle">Тип</h2>
+                <div class="my_proxy__filter_row">
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_socks" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_socks" class="main__checkbox_label">SOCKS</label>
+                  </div>
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_https" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_https" class="main__checkbox_label">HTTPs</label>
+                  </div>
+                </div>
+              </div>
+              <div class="my_proxy__filter_col my_proxy__filter_col_coment">
+                <h2 class="subtitle">Комментарий</h2>
+                <div class="my_proxy__filter_row">
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_with_coment" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_with_coment" class="main__checkbox_label">Есть</label>
+                  </div>
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_without_coment" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_without_coment" class="main__checkbox_label">Нет</label>
+                  </div>
+                </div>
+              </div>
+              <div class="my_proxy__filter_col my_proxy__filter_col_autoprolong">
+                <h2 class="subtitle">Автопродление</h2>
+                <div class="my_proxy__filter_row">
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_with_autoprolong" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_with_autoprolong" class="main__checkbox_label">Подключено</label>
+                  </div>
+                  <div class="my_proxy__filter_container">
+                    <input id="my_proxy__filter_without_autoprolong" type="checkbox" name="" class="main__checkbox">
+                    <label for="my_proxy__filter_without_autoprolong" class="main__checkbox_label">Отключено</label>
+                  </div>
+                </div>
+              </div>
+              <div class="my_proxy__filter_col">
+                <label class="select__label">
+                  <select name="" id="" class="select">
+                    <option value="Россия">Россия</option>
+                    <option value="Германия">Германия</option>
+                    <option value="США">США</option>
+                    <option value="Франция">Франция</option>
+                    <option value="Австралия">Австралия</option>
+                    <option value="Сингапур">Сингапур</option>
+                    <option value="Великобритания">Великобритания</option>
+                    <option value="Украина">Украина</option>
+                    <option value="Япония">Япония</option>
+                    <option value="Нидерланды">Нидерланды</option>
+                  </select>
+                </label>
+                <label class="select__label">
+                  <select name="" id="" class="select">
+                    <option value="Не выбрано" selected>Группа</option>
+                      <option value="Группа А">Группа А</option>
+                    <option value="Группа В">Группа В</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="my_proxy__filter_row">
+              <button type="submit" class="button_red">Применить</button>
+              <button type="reset" class="button_white">Очистить</button>
+            </div>
+          </form>
         </section>
-        <section class="my_proxy__choose display_none">2</section>
+        <section class="my_proxy__choose display_none">
+          <form action="" class="form group">
+            <label class="select_label">
+              <span class="text">Группа</span>
+              <select name="" id="" class="select">
+                <option value="Не выбрано" selected>Группа</option>
+                <option value="Группа А">Группа А</option>
+                <option value="Группа В">Группа В</option>
+              </select>
+            </label>
+            <button class="button_red">Выбрать</button>
+          </form>
+          <form action=""  class="form search">
+            <label class="select_label">
+              <span class="text">Поиск</span>
+              <select name="" id="" class="select">
+                <option value="">Везде</option>
+              </select>
+            </label>
+            <label class="select_label">
+              <input type="text" placeholder="Что искать" class="input">
+            </label>
+            <button type="submit" class="button_red">Найти</button>
+          </form>
+          <p class="text last">Вы можете использовать
+            <a href="" class="link my_proxy__open_pop_up">Поиск списком
+            </a>
+            <div class="icon_container">
+              <svg class="icon" width="13" height="13">
+                <use xlink:href="img/sprite.svg#icon-round-question"></use>
+              </svg>
+            </div>
+          </p>
+        </section>
         <section class="my_proxy__change display_none">3</section>
         <section class="my_proxy__auth display_none">4</section>
         <section class="my_proxy__export display_none">5</section>
