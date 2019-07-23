@@ -32,6 +32,19 @@
 
 .header__account_icon {
   margin-right: 10px;
+  fill: #CCCCCC;
+
+  &.icon-rub {
+    fill: #FF3501;
+  }
+}
+
+.header__account_link:hover {
+  color: #EF081F;
+
+  .header__account_icon {
+    fill: #EF081F;
+  }
 }
 
 .header__logout {

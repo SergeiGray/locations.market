@@ -88,9 +88,19 @@
     });
   };
 
+  var copyText = function (buttonCopy, copyTextBlock) {
+    $(buttonCopy).click( function(evt) {
+      let copyText = document.getElementById(copyTextBlock);
+      copyText.select();
+      document.execCommand("copy");
+    });
+  };
+
   hangSelect2();
   scrollBarСustomization();
   getShowInMyProxy();
   getComentInMyProxy();
+  copyText('.partnership__promocode_copy', 'partnership__promocode');
+  copyText('.partnership__ref_link_copy', 'partnership__ref_link');
 
 }());

@@ -1,0 +1,23 @@
+// ---ATTENTION---
+
+.attention {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 30px;
+  box-sizing: border-box;
+  background-color: #4995FF;
+}
+
+.attention__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.attention__link {
+  color: #FFFFFF;
+}

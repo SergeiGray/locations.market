@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <section class="attention">
+  <section class="attention display_none">
     <p class="attention__text">Внимание! У вас не работает <span>10</span> прокси! Проверить можно в разделе <a href="index.html" class="attention__link">Мои прокси</a></p>
   </section>
   <header>
@@ -51,12 +51,12 @@
     <nav class="nav">
       <section class="wrapper nav__container">
         <ul class="nav__list">
-          <li class="nav__item nav__active">
+          <li class="nav__item">
             <a href="" class="nav__link">
               Мои прокси
             </a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__active">
             <a href="" class="nav__link">
               Партнёрка
             </a>
@@ -89,52 +89,44 @@
         </ul>
       </section>
     </nav>
-    <section class="wrapper balance">
-      <div class="balance__show">
-        <h2 class="title">Баланс</h2>
-        <p class="balance__show_amount">1560 руб.</p>
+    <section class="wrapper partnership">
+      <h2 class="title">Партнёрка</h2>
+      <div class="partnership__row">
+        <div class="partnership__col">
+          <p class="partnership__text">Наша партнерская программа позволит Вам зарабатывать от всех платежей привлеченных Вами клиентов.</p>
+          <p class="partnership__text">Привлекайте новых клиентов по промокоду, который даёт 5% скидку на первую покупку. С каждого платежа реферала вам будет начисляться 10%. Реферал закрепляется за вами навсегда.</p>
+          <p class="partnership__text">Полученные деньги вы можете использовать на оплату услуг сервиса или вывести через платёжные системы (Яндекс.Деньги, Qiwi, WebMoney).</p>
+          <p class="partnership__text">Используйте промокод или реферальную ссылку.</p>
+          <div class="partnership__ref">
+            <p class="text">Ваша реферальная ссылка</p>
+            <input id="partnership__ref_link" type="text" value=" https://location.market/superhero/registration/cubepromo12118738" class="input">
+            <button class="button_white partnership__ref_link_copy">Копировать</button>
+          </div>
+          <h3 class="subtitle">Ваша статистика</h3>
+          <div class="partnership__stat">
+            <div class="partnership__income_all">
+              <p class="partnership__stat_num">350 руб.</p>
+              <p class="partnership__stat_title">заработано всего</p>
+            </div>
+            <div class="partnership__income_day">
+              <p class="partnership__stat_num">50 руб.</p>
+              <p class="partnership__stat_title">заработано сегодня</p>
+            </div>
+            <div class="partnership__ref_all">
+              <p class="partnership__stat_num">15</p>
+              <p class="partnership__stat_title">рефералов всего</p>
+            </div>
+          </div>
+        </div>
+        <div class="partnership__col">
+          <div class="partnership__promo">
+            <h2 class="subtitle">Промокод</h2>
+            <input id="partnership__promocode" type="text" value="superhero" class="input">
+            <button class="button_white partnership__promocode_copy">Копировать</button>
+            <p class="text">Реферальная ссылка автоматически меняется при изменении промокода.</p>
+          </div>
+        </div>
       </div>
-      <form action="" class="form">
-        <p class="balance__form_title">Вы можете пополнить баланс, используя платёжные системы:</p>
-        <div class="balance__systems">
-          <div class="balance__item_systems">
-            <input id="balance__system_card" name="payment_system" value="card" type="radio" class="balance__radio">
-            <label for="balance__system_card" class="balance__radio_label">
-              <svg class="balance__icon" width="101" height="36">
-                <use xlink:href="img/sprite.svg#icon-master-card"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="balance__item_systems">
-            <input id="balance__system_yandex" name="payment_system" value="yandex" type="radio" class="balance__radio">
-            <label for="balance__system_yandex" class="balance__radio_label">
-              <svg class="balance__icon" width="95" height="26">
-                <use xlink:href="img/sprite.svg#icon-yandex-money"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="balance__item_systems">
-            <input id="balance__system_qiwi" name="payment_system" value="qiwi" type="radio" class="balance__radio">
-            <label for="balance__system_qiwi" class="balance__radio_label">
-              <svg class="balance__icon" width="88" height="32">
-                <use xlink:href="img/sprite.svg#icon-qiwi"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="balance__item_systems">
-            <input id="balance__system_webmoney" name="payment_system" value="webmoney" type="radio" class="balance__radio">
-            <label for="balance__system_webmoney" class="balance__radio_label">
-              <svg class="balance__icon" width="115" height="35">
-                <use xlink:href="img/sprite.svg#icon-webmoney"></use>
-              </svg>
-            </label>
-          </div>
-        </div>
-        <div class="balance__amount">
-          <input type="text" placeholder="0 руб." class="input">
-          <button type="submit" class="button_red">Перейти к оплате</button>
-        </div>
-      </form>
     </section>
   </main>
 

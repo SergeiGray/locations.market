@@ -1,0 +1,141 @@
+// ---PARTNERSHIP---
+
+.partnership {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .subtitle {
+    @include font_Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #595959;
+    text-transform: none;
+    margin-bottom: 30px;
+  }
+}
+
+.partnership__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partnership__col {
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    width: 840px;
+  }
+}
+
+.partnership__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 130%;
+  color: #595959;
+
+  &:not(:last-of-type){
+    margin-bottom: 20px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 27px;
+  }
+}
+
+.partnership__ref {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+
+  .text {
+    margin-right: 26px;
+  }
+
+  .input {
+    width: 295px;
+    padding: 0 14px;
+    margin-right: 20px;
+  }
+
+  .button_white {
+    min-width: 120px;
+  }
+}
+
+.partnership__stat {
+  display: flex;
+}
+
+.partnership__income_all,
+.partnership__income_day {
+  margin-right: 53px;
+}
+
+.partnership__stat_num {
+  @include font_Ubuntu;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  color: #FF3501;
+  margin: 0 0 9px;
+}
+
+.partnership__stat_title {
+  font-size: 14px;
+  line-height: 130%;
+  color: #595959;
+}
+
+.partnership__promo {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+  box-sizing: border-box;
+  padding: 20px 30px 30px;
+  background: linear-gradient(90deg, #FF5023 0%, #FF3434 98.89%);
+  border-radius: 5px;
+
+  .subtitle {
+  @include font_Ubuntu;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: none;
+  color: #FFFFFF;
+  margin: 0 0 22px;
+  }
+
+  .input {
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .button_white {
+    min-width: 100%;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    margin-bottom: 20px;
+
+    &:hover {
+      background-color: #FFFFFF;
+      border: none;
+      box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+      color: #EF081F;
+    }
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+  }
+}
