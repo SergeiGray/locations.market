@@ -116,7 +116,7 @@ body {
   background-color: #ffffff;
   border: 1px solid #EF081F;
   border-radius: 3px;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 11px;
   line-height: 13px;
   text-align: center;
@@ -165,6 +165,44 @@ body {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+}
+
+.radio {
+  display: none;
+}
+
+.radio_label {
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  margin: 0;
+  font-size: 13px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.radio_label:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border: 1px solid #D9D9D9;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.radio:checked + .radio_label:before {
+  background-color: #FF151F;
+  border: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' r='4' fill='%23ffffff'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .overlay {

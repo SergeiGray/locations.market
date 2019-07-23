@@ -28,7 +28,7 @@
           </svg>
           <span class="header__account_name">sergh.g@gmail.com</span>
         </a>
-        <a href="" class="header__account_link">
+        <a href="balance.html" class="header__account_link">
           <svg class="header__account_icon" width="23" height="23">
             <use xlink:href="img/sprite.svg#icon-account"></use>
           </svg>
@@ -107,8 +107,8 @@
               </label>
             </li>
             <li class="my_proxy__navigation_item">
-              <input id="show__change" type="radio" name="my_proxy__nav_check" class="input">
-              <label for="show__change" class="my_proxy__link show__change">
+              <input id="show__edit" type="radio" name="my_proxy__nav_check" class="input">
+              <label for="show__edit" class="my_proxy__link show__edit">
                 Изменить
               </label>
             </li>
@@ -289,10 +289,118 @@
             </div>
           </p>
         </section>
-        <section class="my_proxy__change display_none">3</section>
-        <section class="my_proxy__auth display_none">4</section>
-        <section class="my_proxy__export display_none">5</section>
-        <section class="my_proxy__prolong display_none">6</section>
+        <section class="my_proxy__edit display_none">
+          <nav class="my_proxy__edit_nav">
+            <input id="show__edit_login" type="radio" name="my_proxy__edit_check" class="main__input" checked="">
+            <label for="show__edit_login" class="my_proxy__edit_link show__edit_login my_proxy__edit_link_active">Логин и пароль</label>
+            <input id="show__edit_comment" type="radio" name="my_proxy__edit_check" class="main__input">
+            <label for="show__edit_comment" class="my_proxy__edit_link show__edit_comment">Комментарий</label>
+            <input id="show__edit_type" type="radio" name="my_proxy__edit_check" class="main__input">
+            <label for="show__edit_type" class="my_proxy__edit_link show__edit_type">Тип прокси</label>
+          </nav>
+          <section class="my_proxy__edit_login">
+            <form action="" class="form">
+              <input type="text" placeholder="Новый логин" class="input">
+              <input type="password" placeholder="Новый пароль" class="input">
+              <button type="submit" class="button_red">Сохранить</button>
+              <button class="button_white">Сгенерировать</button>
+            </form>
+            <div class="my_proxy__item_container">
+              <input id="my_proxy__edit_login_check" type="checkbox" class="main__checkbox">
+              <label for="my_proxy__edit_login_check" class="main__checkbox_label">Использовать уникальный логин и пароль для каждого прокси</label>
+            </div>
+          </section>
+          <section class="my_proxy__edit_comment display_none">
+            <form action="" class="form">
+              <input type="text" class="input" placeholder="Введите текст">
+              <button type="submit" class="button_red">Добавить</button>
+              <button type="reset" class="button_white">Удалить</button>
+              <button class="button_white">Удалить все</button>
+            </form>
+          </section>
+          <section class="my_proxy__edit_type display_none">
+            <form action="" class="form">
+              <div class="my_proxy__item_container">
+                <input id="my_proxy__edit_type_https" type="radio" name="my_proxy__edit_type" value="htts" class="radio" checked="">
+                <label for="my_proxy__edit_type_https" class="radio_label">HTTPS</label>
+              </div>
+              <div class="my_proxy__item_container">
+                <input id="my_proxy__edit_type_socks" type="radio" name="my_proxy__edit_type" value="socks" class="radio">
+                <label for="my_proxy__edit_type_socks" class="radio_label">SOCKS</label>
+              </div>
+              <button type="submit" class="button_red">Применить ко всем прокси</button>
+            </form>
+          </section>
+        </section>
+        <section class="my_proxy__auth display_none">
+            <form action="" class="form">
+              <div class="my_proxy__item_container">
+                <input id="my_proxy__auth_log" type="radio" name="my_proxy__edit_type" value="log" class="radio" checked="">
+                <label for="my_proxy__auth_log" class="radio_label">По логину и паролю</label>
+              </div>
+              <div class="my_proxy__item_container">
+                <input id="my_proxy__auth_ip" type="radio" name="my_proxy__edit_type" value="ip" class="radio">
+                <label for="my_proxy__auth_ip" class="radio_label">По IP</label>
+              </div>
+              <button type="submit" class="button_red">Применить</button>
+            </form>
+            <form action="" class="form">
+              <input type="text" value="IP" class="input">
+              <button type="submit" class="button_white">Сохранить</button>
+            </form>
+        </section>
+        <section class="my_proxy__export display_none">
+          <form action="" class="form">
+            <div  class="my_proxy__export_row">
+              <div class="my_proxy__item_container">
+                <label class="my_proxy__export_label">
+                  <span>IP</span>
+                  <input type="text" value=":" class="input">
+                  <span>Port</span>
+                </label>
+                <input type="text" value="@" class="input center">
+                <label class="my_proxy__export_label">
+                  <span>Login</span>
+                  <input type="text" value=":" class="input">
+                  <span>Pass</span>
+                </label>
+              </div>
+              <div class="my_proxy__item_container">
+                <input id="my_proxy__export_https" type="radio" name="export" value="htts" class="radio" checked="">
+                <label for="my_proxy__export_https" class="radio_label">HTTPS</label>
+              </div>
+              <div class="my_proxy__item_container">
+                <input id="my_proxy__export_socks" type="radio" name="export" value="socks" class="radio">
+                <label for="my_proxy__export_socks" class="radio_label">SOCKS</label>
+              </div>
+              <button class="button_red">Экспорт .txt</button>
+              <button class="button_red">Экспорт .csv</button>
+              <button class="button_white">Копировать</button>
+            </div>
+            <div class="my_proxy__export_row">
+              <input id="my_proxy__export_auto" type="checkbox" name="authorization" class="main__checkbox">
+              <label for="my_proxy__export_auto" class="main__checkbox_label">Авторизация</label>
+            </div>
+          </form>
+        </section>
+        <section class="my_proxy__prolong display_none">
+          <form action="" class="form">
+            <label class="select_label">
+              <select name="" id="" class="select">
+                <option value="3 дня">3 дня</option>
+                <option value="7 дней">7 дней</option>
+                <option value="2 недели">2 недели</option>
+                <option value="1 месяц">1 месяц</option>
+                <option value="2 месяца">2 месяца</option>
+                <option value="3 месяца">3 месяца</option>
+                <option value="6 месяцев">6 месяцев</option>
+                <option value="1 год">1 год</option>
+              </select>
+            </label>
+            <button class="button_red">Продлить за 23 руб.</button>
+            <button class="button_white">Автопродление</button>
+          </form>
+        </section>
         <table class="main__table">
           <thead class="my_proxy__thead">
             <tr class="main__header_row">
@@ -898,11 +1006,7 @@
         </table>
       </section>
     </section>
-
-
   </main>
-  <footer></footer>
-
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.nicescroll.min.js"></script>
