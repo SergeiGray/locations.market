@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Locations.market</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/overlay_scrollbars.min.css">
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <section class="attention display_none">
+    <p class="attention__text">Внимание! У вас не работает <span>10</span> прокси! Проверить можно в разделе <a href="index.html" class="attention__link">Мои прокси</a></p>
+  </section>
+  <header>
+    <section class="wrapper header__container">
+      <a href="index.html" class="logo">
+        <svg class="logo__icon" width="25" height="33">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+        <span class="logo__text_container">
+          <span>locations.</span><span>market</span>
+        </span>
+      </a>
+      <div class="header__account">
+        <a href="" class="header__account_link">
+          <svg class="header__account_icon" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-account"></use>
+          </svg>
+          <span class="header__account_name">sergh.g@gmail.com</span>
+        </a>
+        <a href="balance.html" class="header__account_link">
+          <svg class="header__account_icon icon-rub" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-rub"></use>
+          </svg>
+          <span class="header__account_balance">1560 руб.</span>
+        </a>
+        <a href="" class="header__account_link">
+          <svg class="header__account_icon" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-gear"></use>
+          </svg>
+          <span class="header__account_setting">Настройки</span>
+        </a>
+      </div>
+      <button class="header__logout">Выйти</button>
+    </section>
+  </header>
+  <main>
+    <nav class="nav">
+      <section class="wrapper nav__container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Мои прокси
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Партнёрка
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              История
+            </a>
+          </li>
+          <li class="nav__item nav__active">
+            <a href="" class="nav__link">
+              Чекер
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Поддержка IPv6
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Конвертер
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <span>Помощь</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <section class="wrapper checker">
+      <h2 class="title">Чекер прокси</h2>
+      <p class="text">Сервис для проверки работоспособности прокси. Он поможет Вам определить статус, тип, страну прокси, а так же внешний адрес прокси, который отображается тому или иному ресурсу в Сети.</p>
+      <form action="" class="form">
+        <div class="checker__col">
+          <textarea name="" id="" class="checker__input_field">5.188.181.246:4116@lGr3NJWT:hdSyZ1gH
+5.188.181.245:11570@DyleSzcJ:Ak2dCDFU
+5.188.181.244:12030@tl1eyixY:8ymQMBrR
+5.188.181.242:3062@UfiprAzJ:Mpx8Szko
+5.188.215.240:12302@BlXuY3Wa:3i1HNd7B
+5.188.215.240:6362@ClVTsFcA:cseixEDZ
+5.188.215.251:11206@knFsjQli:WBxtaDdy
+5.188.215.246:9174@hHWflaUn:2vmwrlHQ
+146.185.209.251:8126@pRkaNFMc:xYbjVDur
+146.185.209.241:12642@RMsiUoGN:eZbvUXTQ
+          </textarea>
+          <button class="button_red">Проверить</button>
+        </div>
+        <div class="checker__col">
+          <div class="checker_item_container">
+            <label class="checker__export_label">
+              <span>IP</span>
+              <input type="text" value=":" class="input">
+              <span>Port</span>
+            </label>
+            <input type="text" value="@" class="input center">
+            <label class="checker__export_label">
+              <span>Login</span>
+              <input type="text" value=":" class="input">
+              <span>Pass</span>
+            </label>
+          </div>
+          <div class="checker__checkbox_container">
+            <input id="checker__export_auto" type="checkbox" name="authorization" class="main__checkbox">
+            <label for="checker__export_auto" class="main__checkbox_label">Прокси с авторизацией</label>
+          </div>
+          <p class="text">Вы можете изменить формат представления прокси перетаскиванием, а также с помощью галочки Прокси с авторизацией (с использовнаием логина и пароля или без)</p>
+        </div>
+      </form>
+      <h3 class="subtitle">Результаты проверки</h3>
+      <div class="checker__result_container">
+        <div class="checker__result">
+          <div class="checker__result_header">
+            <p class="checker__result_title">Рабочие прокси</p>
+            <button class="checker__copy checker__copy_work">Копировать</button>
+            <a href="" class="checker__result_download">Скачать (txt)</a>
+          </div>
+          <textarea name="" id="checker__work" class="checker__output_field">5.188.181.246:4116@lGr3NJWT:hdSyZ1gH
+5.188.181.245:11570@DyleSzcJ:Ak2dCDFU
+5.188.181.244:12030@tl1eyixY:8ymQMBrR
+5.188.181.242:3062@UfiprAzJ:Mpx8Szko
+5.188.215.240:12302@BlXuY3Wa:3i1HNd7B
+5.188.215.240:6362@ClVTsFcA:cseixEDZ
+5.188.215.251:11206@knFsjQli:WBxtaDdy
+5.188.215.246:9174@hHWflaUn:2vmwrlHQ
+146.185.209.251:8126@pRkaNFMc:xYbjVDur
+146.185.209.241:12642@RMsiUoGN:eZbvUXTQ
+5.188.181.246:4116@lGr3NJWT:hdSyZ1gH
+5.188.181.245:11570@DyleSzcJ:Ak2dCDFU
+5.188.181.244:12030@tl1eyixY:8ymQMBrR
+          </textarea>
+        </div>
+        <div class="checker__result">
+          <div class="checker__result_header">
+            <p class="checker__result_title">Нерабочие прокси</p>
+            <button class="checker__copy checker__copy_not_working">Копировать</button>
+            <a href="" class="checker__result_download">Скачать (txt)</a>
+          </div>
+          <textarea name="" id="checker__not_working" class="checker__output_field">5.188.181.246:4116@lGr3NJWT:hdSyZ1gH
+          </textarea>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
+  <script src="js/jquery.flexslider.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

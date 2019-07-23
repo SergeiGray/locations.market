@@ -17,6 +17,10 @@
       cursorcolor: "#CCCCCC",
       cursorborder: "none"
     });
+    $('textarea').niceScroll({
+      cursorcolor: "#CCCCCC",
+      cursorborder: "none"
+    });
     $('.select').click( function () {
       $('.select2-results__options').niceScroll({
       cursorcolor: "#CCCCCC",
@@ -102,5 +106,7 @@
   getComentInMyProxy();
   copyText('.partnership__promocode_copy', 'partnership__promocode');
   copyText('.partnership__ref_link_copy', 'partnership__ref_link');
+  copyText('.checker__copy_work', 'checker__work');
+  copyText('.checker__copy_not_working', 'checker__not_working');
 
 }());
