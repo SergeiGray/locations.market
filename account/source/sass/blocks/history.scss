@@ -1,0 +1,55 @@
+// ---HISTORY---
+
+.history {
+
+  .title {
+    margin-bottom: 30px;
+  }
+}
+
+.history__tbody {
+  max-height: calc(100vh - 320px);
+}
+
+.history__date {
+  width: 200px;
+  padding-left: 20px;
+}
+
+.history__operation {
+  width: 590px;
+}
+
+.history__action {
+  width: 120px;
+}
+
+.history__sum {
+  width: 120px;
+}
+
+.history__balance {
+  flex-grow: 1;
+}
+
+.history__open_group {
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+.history__tbody {
+
+  .history__sum_positive {
+    color: #4995FF;
+  }
+  .history__sum_negative {
+    color: #FF151F;
+  }
+
+  .history__balance {
+    font-weight: bold;
+  }
+}

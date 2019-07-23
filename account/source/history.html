@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Locations.market</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/overlay_scrollbars.min.css">
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <section class="attention display_none">
+    <p class="attention__text">Внимание! У вас не работает <span>10</span> прокси! Проверить можно в разделе <a href="index.html" class="attention__link">Мои прокси</a></p>
+  </section>
+  <header>
+    <section class="wrapper header__container">
+      <a href="index.html" class="logo">
+        <svg class="logo__icon" width="25" height="33">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+        <span class="logo__text_container">
+          <span>locations.</span><span>market</span>
+        </span>
+      </a>
+      <div class="header__account">
+        <a href="" class="header__account_link">
+          <svg class="header__account_icon" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-account"></use>
+          </svg>
+          <span class="header__account_name">sergh.g@gmail.com</span>
+        </a>
+        <a href="balance.html" class="header__account_link">
+          <svg class="header__account_icon icon-rub" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-rub"></use>
+          </svg>
+          <span class="header__account_balance">1560 руб.</span>
+        </a>
+        <a href="" class="header__account_link">
+          <svg class="header__account_icon" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-gear"></use>
+          </svg>
+          <span class="header__account_setting">Настройки</span>
+        </a>
+      </div>
+      <button class="header__logout">Выйти</button>
+    </section>
+  </header>
+  <main>
+    <nav class="nav">
+      <section class="wrapper nav__container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Мои прокси
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Партнёрка
+            </a>
+          </li>
+          <li class="nav__item nav__active">
+            <a href="" class="nav__link">
+              История
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Чекер
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Поддержка IPv6
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Конвертер
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <span>Помощь</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <section class="wrapper history">
+      <h2 class="title">История операций</h2>
+      <table class="main__table">
+        <thead class="history__thead">
+          <tr class="main__header_row">
+            <th class="main__header_col history__date">Дата</th>
+            <th class="main__header_col history__operation">Операция</th>
+            <th class="main__header_col history__action">Действия</th>
+            <th class="main__header_col history__sum">Сумма</th>
+            <th class="main__header_col history__balance">Баланс</th>
+          </tr>
+        </thead>
+        <tbody class="history__tbody">
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Покупка IPv6 прокси, 10 шт. на 30 дней</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_negative">
+              <span>-59 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Пополнение баланса на сумму 3000 руб.</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group display_none">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_positive">
+              <span>+3000 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Покупка IPv6 прокси, 10 шт. на 30 дней</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_negative">
+              <span>-59 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Пополнение баланса на сумму 3000 руб.</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group display_none">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_positive">
+              <span>+3000 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Покупка IPv6 прокси, 10 шт. на 30 дней</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_negative">
+              <span>-59 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Пополнение баланса на сумму 3000 руб.</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group display_none">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_positive">
+              <span>+3000 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Покупка IPv6 прокси, 10 шт. на 30 дней</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_negative">
+              <span>-59 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Пополнение баланса на сумму 3000 руб.</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group display_none">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_positive">
+              <span>+3000 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Покупка IPv6 прокси, 10 шт. на 30 дней</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_negative">
+              <span>-59 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Пополнение баланса на сумму 3000 руб.</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group display_none">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_positive">
+              <span>+3000 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Покупка IPv6 прокси, 10 шт. на 30 дней</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_negative">
+              <span>-59 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Пополнение баланса на сумму 3000 руб.</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group display_none">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_positive">
+              <span>+3000 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Покупка IPv6 прокси, 10 шт. на 30 дней</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_negative">
+              <span>-59 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Пополнение баланса на сумму 3000 руб.</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group display_none">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_positive">
+              <span>+3000 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Покупка IPv6 прокси, 10 шт. на 30 дней</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_negative">
+              <span>-59 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+          <tr class="history__row">
+            <td class="main__col history__date">
+              <span>01.07.19 10:55</span>
+            </td>
+            <td class="main__col history__operation">
+              <span>Пополнение баланса на сумму 3000 руб.</span>
+            </td>
+            <td class="main__col history__action">
+              <a href="" class="history__open_group display_none">
+                <svg class="nav__icon" width="18" height="18">
+                  <title>Открыть группу</title>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </td>
+            <td class="main__col history__sum history__sum_positive">
+              <span>+3000 руб.</span>
+            </td>
+            <td class="main__col history__balance">
+              <span>3220 руб.</span>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot class="history__tfoot">
+          <tr class="main__footer_row">
+            <td class="main__footer_col">
+              <span class="main__footer_text">Строки</span>
+              <select name="" id="" class="main__footer_select">
+                <option value="all">Все</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="150">150</option>
+              </select>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
+  <script src="js/jquery.flexslider.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

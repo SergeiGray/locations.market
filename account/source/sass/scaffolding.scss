@@ -334,9 +334,18 @@ body {
   color: #999999;
   @include font_Ubuntu;
   font-size: 14px;
-  line-height: 130%;
+  line-height: 22px;
+}
 
+.main__footer_row {
 
+  .main__footer_select,
+  .select2-selection--single,
+  .select2-container,
+  .select2-selection__rendered {
+    height: 24px !important;
+    line-height: 22px !important;
+  }
 }
 
 .main__change_page {
