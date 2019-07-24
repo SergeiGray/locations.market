@@ -112,5 +112,6 @@
   copyText('.partnership__ref_link_copy', 'partnership__ref_link');
   copyText('.checker__copy_work', 'checker__work');
   copyText('.checker__copy_not_working', 'checker__not_working');
+  copyText('.converter__copy', 'converter__copy_field');
 
 }());

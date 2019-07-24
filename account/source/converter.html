@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Locations.market</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/overlay_scrollbars.min.css">
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <section class="attention display_none">
+    <p class="attention__text">Внимание! У вас не работает <span>10</span> прокси! Проверить можно в разделе <a href="index.html" class="attention__link">Мои прокси</a></p>
+  </section>
+  <header>
+    <section class="wrapper header__container">
+      <a href="index.html" class="logo">
+        <svg class="logo__icon" width="25" height="33">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+        <span class="logo__text_container">
+          <span>locations.</span><span>market</span>
+        </span>
+      </a>
+      <div class="header__account">
+        <a href="" class="header__account_link">
+          <svg class="header__account_icon" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-account"></use>
+          </svg>
+          <span class="header__account_name">sergh.g@gmail.com</span>
+        </a>
+        <a href="balance.html" class="header__account_link">
+          <svg class="header__account_icon icon-rub" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-rub"></use>
+          </svg>
+          <span class="header__account_balance">1560 руб.</span>
+        </a>
+        <a href="" class="header__account_link">
+          <svg class="header__account_icon" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-gear"></use>
+          </svg>
+          <span class="header__account_setting">Настройки</span>
+        </a>
+      </div>
+      <button class="header__logout">Выйти</button>
+    </section>
+  </header>
+  <main>
+    <nav class="nav">
+      <section class="wrapper nav__container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Мои прокси
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Партнёрка
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              История
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Чекер
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Поддержка IPv6
+            </a>
+          </li>
+          <li class="nav__item nav__active">
+            <a href="" class="nav__link">
+              Конвертер
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <span>Помощь</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <section class="wrapper converter">
+      <h2 class="title">Конвертер</h2>
+      <p class="text">С помощью конвертера вы можете перевести список прокси в удобный формат.</p>
+      <div class="converter__row">
+        <form  action="" class="form">
+          <h3 class="subtitle">Формат исходный</h3>
+          <div class="converter__form_row">
+            <div class="converter_item_container">
+              <label class="converter__export_label">
+                <span>IP</span>
+                <input type="text" value=":" class="input">
+                <span>Port</span>
+              </label>
+              <input type="text" value="@" class="input center">
+              <label class="converter__export_label">
+                <span>Login</span>
+                <input type="text" value=":" class="input">
+                <span>Pass</span>
+              </label>
+            </div>
+            <div class="converter__checkbox_container">
+              <input id="converter__export_auto" type="checkbox" name="authorization" class="main__checkbox">
+              <label for="converter__export_auto" class="main__checkbox_label">С авторизацией</label>
+            </div>
+          </div>
+          <textarea name="" id="" class="converter__input_field"></textarea>
+          <button class="button_red">Конвертировать</button>
+        </form>
+        <form class="form">
+          <h3 class="subtitle">Формат после конвертации</h3>
+          <div class="converter__form_row">
+            <div class="converter_item_container">
+              <label class="converter__export_label">
+                <span>IP</span>
+                <input type="text" value=":" class="input">
+                <span>Port</span>
+              </label>
+            </div>
+            <div class="converter__checkbox_container">
+              <input id="converter__inport_auto" type="checkbox" name="authorization" class="main__checkbox">
+              <label for="converter__inport_auto" class="main__checkbox_label">С авторизацией</label>
+            </div>
+          </div>
+          <textarea name="" id="converter__copy_field" class="converter__input_field"></textarea>
+          <div class="converter__form_row">
+            <button class="converter__copy">Копировать</button>
+            <a href="" class="converter__download">Скачать (txt)</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
+  <script src="js/jquery.flexslider.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
