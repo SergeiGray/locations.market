@@ -112,4 +112,8 @@
 .settings__link {
   text-decoration: none;
   color: #EF081F;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

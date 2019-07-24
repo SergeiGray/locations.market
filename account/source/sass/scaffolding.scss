@@ -222,6 +222,17 @@ body {
   transition: opacity .5s;
 }
 
+.popup__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.6666 10L19.9999 0.666664L19.3333 0L9.99993 9.33334L0.666664 7.12369e-05L0 0.666735L9.33327 10L4.52807e-06 19.3333L0.666669 19.9999L9.99993 10.6667L19.3333 20L19.9999 19.3333L10.6666 10Z' fill='%23C4C4C4'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .form {
   display: -webkit-flex;
   display: -moz-flex;

@@ -165,7 +165,12 @@
   text-decoration: none;
   border: none;
   background-color: #ffffff;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
+
 
 .checker__result_header {
   display: flex;

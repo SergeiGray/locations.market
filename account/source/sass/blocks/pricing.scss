@@ -1,0 +1,140 @@
+// ---PRICING---
+
+.pricing {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  box-sizing: border-box;
+  margin-top: -310px;
+  margin-left: -500px;
+  z-index: 12;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+  padding: 40px 50px 50px;
+
+  .title {
+    margin-bottom: 15px;
+  }
+}
+
+.pricing__text {
+  font-size: 14px;
+  line-height: 130%;
+  color: #444444;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.pricing__link {
+  text-decoration: none;
+  color: #FF151F;
+}
+
+.pricing__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing__item_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 272px;
+  box-sizing: border-box;
+  background-color: transparent;
+
+  &:not(:last-child) {
+    width: 294px;
+    border-right: 1px solid #E6E6E6;
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button_red {
+    min-width: 100%;
+    min-height: 50px;
+  }
+}
+
+.pricing .select,
+.pricing .select2-container,
+.pricing .select2-selection__rendered {
+  width: 100% !important;
+}
+
+.pricing__item_title {
+  margin: 0 0 5px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #4995FF;
+}
+
+.pricing__item_text {
+  margin: 0 0 27px;
+  font-size: 16px;
+  line-height: 130%;
+  color: #737373;
+}
+
+.pricing__item_container .input {
+  width: 100%;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.pricing__label {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pricing__promocode {
+  position: relative;
+}
+
+.pricing__promocode_submit {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  height: 32px;
+  padding: 0 15px;
+  font-size: 13px;
+  line-height: 140%;
+  color: #7E64FE;
+  background-color: #ffffff;
+  box-shadow: none;
+  border: none;
+}
+
+.pricing__price {
+  margin: 0 0 7px;
+  font-size: 26px;
+  line-height: 140%;
+  color: #FF151F
+}
+
+.pricing__item_paragraph {
+  width: 210px;
+  font-size: 12px;
+  line-height: 140%;
+  color: #666666;
+  margin: 0 0 18px;
+}

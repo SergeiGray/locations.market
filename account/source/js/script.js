@@ -104,6 +104,52 @@
     });
   };
 
+  var showPopUpPricing = function () {
+    $('.popup__close, .overlay').click(function (){
+      $('.pricing, .overlay').css({'opacity': 0, 'display': 'none'});
+    });
+    $('.show__buy').click(function (event){
+      event.preventDefault();
+      $('.pricing, .overlay').css({'opacity': 1, 'display': 'flex'});
+      $(document).keydown(function(event) {
+          if (event.keyCode === 27) {
+              event.stopPropagation();
+              $('.pricing, .overlay').css({'opacity': 0, 'display': 'none'});
+          }
+      });
+    });
+  };
+
+  var showPopUpGroup = function () {
+    $('.popup__close, .overlay').click(function (){
+      $('.group, .overlay').css({'opacity': 0, 'display': 'none'});
+    });
+    $('.history__open_group').click(function (event){
+      event.preventDefault();
+      $('.group, .overlay').css({'opacity': 1, 'display': 'flex'});
+      $(document).keydown(function(event) {
+          if (event.keyCode === 27) {
+              event.stopPropagation();
+              $('.group, .overlay').css({'opacity': 0, 'display': 'none'});
+          }
+      });
+    });
+  };
+
+  var renameGroup = function () {
+    $(".group__rename").click(function (evt) {
+      evt.preventDefault();
+      $('.group__title').prop('disabled',false);
+      $('.group__rename').addClass('display_none');
+      $('.group__submit').removeClass('display_none');
+    });
+    $('.group__submit').click(function (evt) {
+      $('.group__title').prop('disabled',true);
+      $('.group__submit').addClass('display_none');
+      $('.group__rename').removeClass('display_none');
+    });
+  };
+
   hangSelect2();
   scrollBarСustomization();
   getShowInMyProxy();
@@ -113,5 +159,8 @@
   copyText('.checker__copy_work', 'checker__work');
   copyText('.checker__copy_not_working', 'checker__not_working');
   copyText('.converter__copy', 'converter__copy_field');
+  showPopUpPricing();
+  renameGroup();
+  showPopUpGroup();
 
 }());
