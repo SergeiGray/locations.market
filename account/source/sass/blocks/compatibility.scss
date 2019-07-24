@@ -1,0 +1,167 @@
+// ---COMPATIBILITY---
+
+.compatibility {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .subtitle {
+    text-transform: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #595959;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 130%;
+    color: #595959;
+  }
+
+  &>.text {
+    margin-bottom: 21px;
+  }
+
+}
+
+.compatibility__result {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 70px;
+  padding: 20px 46px;
+  background-color: #F7F7F7;
+  margin-bottom: 25px;
+
+  &.support {
+    background-color: #F5F9FF;
+  }
+
+  &.not_support {
+    background-color: #FFF1F1;
+  }
+}
+
+.compatibility__result_link {
+  text-decoration: none;
+  color: #4995FF;
+}
+
+.compatibility__form {
+  margin-bottom: 38px;
+
+  .input {
+    min-width: 295px;
+    margin-right: 20px;
+  }
+
+  .button_red {
+    min-width: 145px;
+  }
+}
+
+.compatibility__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.compatibility__item_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 272px;
+  box-sizing: border-box;
+  background-color: transparent;
+
+  &:not(:last-child) {
+    width: 294px;
+    border-right: 1px solid #E6E6E6;
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button_red {
+    min-width: 100%;
+    min-height: 50px;
+  }
+}
+
+.compatibility .select,
+.compatibility .select2-container,
+.compatibility .select2-selection__rendered {
+  width: 100% !important;
+}
+
+.compatibility__item_title {
+  margin: 0 0 5px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #4995FF;
+}
+
+.compatibility__item_text {
+  margin: 0 0 27px;
+  font-size: 16px;
+  line-height: 130%;
+  color: #737373;
+}
+
+.compatibility__item_container .input {
+  width: 100%;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.compatibility__label {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.compatibility__promocode {
+  position: relative;
+}
+
+.compatibility__promocode_submit {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  height: 32px;
+  padding: 0 15px;
+  font-size: 13px;
+  line-height: 140%;
+  color: #7E64FE;
+  background-color: #ffffff;
+  box-shadow: none;
+  border: none;
+}
+
+.compatibility__price {
+  margin: 0 0 7px;
+  font-size: 26px;
+  line-height: 140%;
+  color: #FF151F
+}
+
+.compatibility__item_paragraph {
+  width: 210px;
+  font-size: 12px;
+  line-height: 140%;
+  color: #666666;
+  margin: 0 0 18px;
+}
