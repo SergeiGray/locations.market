@@ -1,0 +1,115 @@
+// ---SETTINGS---
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .subtitle {
+    @include font_Ubuntu;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #595959;
+    margin: 0 0 25px;
+  }
+
+  .main__checkbox_label {
+    margin-left: 27px;
+
+    &:after {
+      left: -27px;
+    }
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 47px;
+
+    .button_red {
+      min-width: 212px;
+    }
+  }
+}
+
+.settings__row {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 32px;
+}
+
+.settings__input_label {
+  display: flex;
+  flex-direction: column;
+
+  .input {
+    width: 295px;
+    margin-right: 30px;
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
+  .text {
+    margin-bottom: 14px;
+  }
+}
+
+.settings__select_label {
+
+  .select,
+  .select2-container,
+  .select2-selection__rendered {
+    width: 75px !important;
+  }
+}
+
+.settings__checkbox_container {
+  margin-bottom: 10px;
+
+  &:not(:last-of-type) {
+    margin-right: 40px;
+  }
+
+  &:last-of-type {
+    margin-right: 20px;
+  }
+}
+
+.settings__text {
+  font-size: 14px;
+  line-height: 130%;
+  color: #595959;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.settings__api {
+  display: flex;
+  align-items: center;
+
+  .text {
+    margin-right: 30px;
+  }
+
+  .input {
+    min-width: 295px;
+    margin-right: 20px;
+  }
+
+  .button_red {
+    min-width: 145px;
+  }
+}
+
+.settings__link {
+  text-decoration: none;
+  color: #EF081F;
+}

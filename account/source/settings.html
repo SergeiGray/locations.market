@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Locations.market</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/overlay_scrollbars.min.css">
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <section class="attention display_none">
+    <p class="attention__text">Внимание! У вас не работает <span>10</span> прокси! Проверить можно в разделе <a href="index.html" class="attention__link">Мои прокси</a></p>
+  </section>
+  <header>
+    <section class="wrapper header__container">
+      <a href="index.html" class="logo">
+        <svg class="logo__icon" width="25" height="33">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+        <span class="logo__text_container">
+          <span>locations.</span><span>market</span>
+        </span>
+      </a>
+      <div class="header__account">
+        <a href="" class="header__account_link">
+          <svg class="header__account_icon" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-account"></use>
+          </svg>
+          <span class="header__account_name">sergh.g@gmail.com</span>
+        </a>
+        <a href="balance.html" class="header__account_link">
+          <svg class="header__account_icon icon-rub" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-rub"></use>
+          </svg>
+          <span class="header__account_balance">1560 руб.</span>
+        </a>
+        <a href="" class="header__account_link">
+          <svg class="header__account_icon" width="23" height="23">
+            <use xlink:href="img/sprite.svg#icon-gear"></use>
+          </svg>
+          <span class="header__account_setting">Настройки</span>
+        </a>
+      </div>
+      <button class="header__logout">Выйти</button>
+    </section>
+  </header>
+  <main>
+    <nav class="nav">
+      <section class="wrapper nav__container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Мои прокси
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Партнёрка
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              История
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Чекер
+            </a>
+          </li>
+          <li class="nav__item nav__active">
+            <a href="" class="nav__link">
+              Поддержка IPv6
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Конвертер
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <span>Помощь</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <section class="wrapper settings">
+      <h2 class="title">Настройки</h2>
+      <form action="" class="form">
+        <div class="settings__row">
+          <label class="settings__input_label">
+            <span class="text">E-mail</span>
+            <input type="email" class="input" placeholder="sergh.g@gmail.com">
+          </label>
+          <div class="settings__checkbox_container">
+            <input id="settings__payment" type="checkbox" name="authorization" class="main__checkbox">
+            <label for="settings__payment" class="main__checkbox_label">Оповещения об оплате</label>
+          </div>
+          <div class="settings__checkbox_container">
+            <input id="settings__entering" type="checkbox" name="authorization" class="main__checkbox">
+            <label for="settings__entering" class="main__checkbox_label">Вход в личный кабинет</label>
+          </div>
+          <div class="settings__checkbox_container">
+            <input id="settings__ending" type="checkbox" name="authorization" class="main__checkbox">
+            <label for="settings__ending" class="main__checkbox_label">Окончание срока аренды</label>
+          </div>
+          <label class="settings__select_label">
+            <select name="" id="" class="select">
+              <option value="1 день">1 день</option>
+              <option value="2 дня">2 дня</option>
+              <option value="3 дня">3 дня</option>
+              <option value="7 дней">7 дней</option>
+            </select>
+          </label>
+        </div>
+        <div class="settings__row">
+          <label class="settings__input_label">
+            <span class="text">Текущий пароль</span>
+            <input type="password" class="input" placeholder="***********">
+          </label>
+          <label class="settings__input_label">
+            <span class="text">Новый пароль</span>
+            <input type="password" class="input" placeholder="***********">
+          </label>
+        </div>
+        <button type="submit" class="button_red">Сохранить изменения</button>
+      </form>
+      <h3 class="subtitle">API</h3>
+      <p class="settings__text"> Никому не сообщайте ключ, чтобы им не могли воспользоваться злоумышленники.</p>
+      <p class="settings__text">Вся подробная информация по состояниям и правилах использования доступна по ссылке <a href="" class="settings__link">Документация</a>.</p>
+      <div class="settings__api">
+        <span class="text">Ключ API</span>
+        <input type="text" class="input" value="TKAlk5pr3gGpu8TOJTanLYFg_5QBZ-lb">
+        <button class="button_red">Сгенерировать</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
+  <script src="js/jquery.flexslider.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
