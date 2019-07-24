@@ -274,15 +274,10 @@ body {
 
 .main__table th,
 .main__table td {
-  -ms-align-items: center;
   align-items: center;
 }
 
 .main__table tbody {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
   flex-direction: column;
   min-height: 250px;
   overflow-y: auto;
@@ -306,7 +301,7 @@ body {
 }
 
 .main__col {
-  height: 51px;
+  height: 50px;
   text-align: center;
   vertical-align: middle;
   font-size: 14px;

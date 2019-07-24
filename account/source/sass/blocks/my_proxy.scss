@@ -90,12 +90,24 @@
 .show__prolong {
   color: #EF081F;
   border-color: #EF081F;
+
+  &:hover {
+    border: none;
+    background-color: #FF3501;
+    color: #FFFFFF;
+  }
 }
 
 .show__buy {
   background-color: #EF081F;
   border: none;
   color: #FFFFFF;
+
+  &:hover {
+    border: none;
+    background-color: #FF3501;
+    color: #FFFFFF;
+  }
 }
 
 .my_proxy__icon {
@@ -181,6 +193,11 @@
 
 .my_proxy__verification {
   width: 100px;
+
+  &:hover {
+    text-decoration: underline;
+    color: #EF081F;
+  }
 }
 
 .my_proxy__autoprolong {
@@ -197,6 +214,10 @@
     font-size: 12px;
     line-height: 140%;
     color: #595959;
+
+    &:hover {
+      color: #EF081F;
+    }
   }
 }
 
@@ -262,20 +283,33 @@
 
   .my_proxy__working {
     color: #4995FF;
+
+    &:hover {
+      color: #EF081F;
+    }
   }
 
   .my_proxy__not_working {
     color: #FF3501;
+
+    &:hover {
+      color: #EF081F;
+    }
   }
 }
 
 
 .my_proxy__row {
 
+  &:first-child {
+    padding-top: 1px;
+  }
+
   &:hover {
     background-color: #F7F7F7;
 
     &:first-child {
+      padding-top: 0;
       border-top: 1px solid #E6E6E6;
     }
   }
@@ -604,6 +638,7 @@
 .my_proxy__edit_nav {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   width: 180px;
   box-sizing: border-box;
   margin: 0 25px 0 0;

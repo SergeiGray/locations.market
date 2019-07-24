@@ -17,7 +17,7 @@
       cursorcolor: "#CCCCCC",
       cursorborder: "none"
     });
-    $('textarea').niceScroll({
+    $('.nicescroll').niceScroll({
       cursorcolor: "#CCCCCC",
       cursorborder: "none"
     });
