@@ -37,7 +37,7 @@
           </svg>
           <span class="header__account_balance">1560 руб.</span>
         </a>
-        <a href="" class="header__account_link">
+        <a href="settings.html" class="header__account_link">
           <svg class="header__account_icon" width="23" height="23">
             <use xlink:href="img/sprite.svg#icon-gear"></use>
           </svg>
@@ -48,265 +48,384 @@
     </section>
   </header>
   <main>
+    <section class="overlay"></section>
+    <section class="pricing">
+      <svg class="popup__close" width="20" height="20"></svg>
+      <h2 class="title">Купить прокси</h2>
+      <p class="pricing__text">Перед покупкой убедитесь, что прокси подходит для выбранного вами сервиса. <a href="" class="pricing__link">Поддержка IPv6</a></p>
+      <div class="pricing__container">
+        <div class="pricing__item_container">
+          <h2 class="pricing__item_title">IPv6 прокси</h2>
+          <p class="pricing__item_text">индивидуальные</p>
+          <form id="form" action="" class="form">
+            <input type="text" class="input" placeholder="1 шт.">
+            <label class="pricing__label">
+              <select name="" id="" class="select">
+                <option value="3 дня">3 дня</option>
+                <option value="7 дней">7 дней</option>
+                <option value="2 недели">2 недели</option>
+                <option value="1 месяц">1 месяц</option>
+                <option value="2 месяца">2 месяца</option>
+                <option value="3 месяца">3 месяца</option>
+                <option value="6 месяцев">6 месяцев</option>
+                <option value="1 год">1 год</option>
+              </select>
+            </label>
+            <label class="pricing__label">
+              <select name="" id="" class="select">
+                <option value="Россия">Россия</option>
+                <option value="Германия">Германия</option>
+                <option value="США">США</option>
+                <option value="Франция">Франция</option>
+                <option value="Австралия">Австралия</option>
+                <option value="Сингапур">Сингапур</option>
+                <option value="Великобритания">Великобритания</option>
+                <option value="Украина">Украина</option>
+                <option value="Япония">Япония</option>
+                <option value="Нидерланды">Нидерланды</option>
+              </select>
+            </label>
+            <input type="text" class="input" placeholder="Промокод">
+            <p class="pricing__price">6,5 руб.</p>
+            <p class="pricing__item_paragraph">возьмите еще 4 прокси — получите скидку 1.5 руб</p>
+            <button type="submit" class="button_red">Купить</button>
+          </form>
+        </div>
+        <div class="pricing__item_container">
+          <h2 class="pricing__item_title">IPv4 прокси</h2>
+          <p class="pricing__item_text">индивидуальные</p>
+          <form id="form" action="" class="form">
+            <input type="text" class="input" placeholder="1 шт.">
+            <label class="pricing__label">
+              <select name="" id="" class="select">
+                <option value="3 дня">3 дня</option>
+                <option value="7 дней">7 дней</option>
+                <option value="2 недели">2 недели</option>
+                <option value="1 месяц">1 месяц</option>
+                <option value="2 месяца">2 месяца</option>
+                <option value="3 месяца">3 месяца</option>
+                <option value="6 месяцев">6 месяцев</option>
+                <option value="1 год">1 год</option>
+              </select>
+            </label>
+            <label class="pricing__label">
+              <select name="" id="" class="select">
+                <option value="Россия">Россия</option>
+                <option value="Германия">Германия</option>
+                <option value="США">США</option>
+                <option value="Франция">Франция</option>
+                <option value="Австралия">Австралия</option>
+                <option value="Сингапур">Сингапур</option>
+                <option value="Великобритания">Великобритания</option>
+                <option value="Украина">Украина</option>
+                <option value="Япония">Япония</option>
+                <option value="Нидерланды">Нидерланды</option>
+              </select>
+            </label>
+            <input type="text" class="input" placeholder="Промокод">
+            <p class="pricing__price">65 руб.</p>
+            <p class="pricing__item_paragraph">возьмите еще 4 прокси — получите скидку 5 руб</p>
+            <button type="submit" class="button_red">Купить</button>
+          </form>
+        </div>
+        <div class="pricing__item_container">
+          <h2 class="pricing__item_title">IPv4 прокси</h2>
+          <p class="pricing__item_text">shared (до 3 пользователей)</p>
+          <form id="form" action="" class="form">
+            <input type="text" class="input" placeholder="1 шт.">
+            <label class="pricing__label">
+              <select name="" id="" class="select">
+                <option value="3 дня">3 дня</option>
+                <option value="7 дней">7 дней</option>
+                <option value="2 недели">2 недели</option>
+                <option value="1 месяц">1 месяц</option>
+                <option value="2 месяца">2 месяца</option>
+                <option value="3 месяца">3 месяца</option>
+                <option value="6 месяцев">6 месяцев</option>
+                <option value="1 год">1 год</option>
+              </select>
+            </label>
+            <label class="pricing__label">
+              <select name="" id="" class="select">
+                <option value="Россия">Россия</option>
+                <option value="Германия">Германия</option>
+                <option value="США">США</option>
+                <option value="Франция">Франция</option>
+                <option value="Австралия">Австралия</option>
+                <option value="Сингапур">Сингапур</option>
+                <option value="Великобритания">Великобритания</option>
+                <option value="Украина">Украина</option>
+                <option value="Япония">Япония</option>
+                <option value="Нидерланды">Нидерланды</option>
+              </select>
+            </label>
+            <input type="text" class="input" placeholder="Промокод">
+            <p class="pricing__price">33 руб.</p>
+            <p class="pricing__item_paragraph">возьмите еще 4 прокси — получите скидку 3 руб</p>
+            <button type="submit" class="button_red">Купить</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <nav class="nav">
       <section class="wrapper nav__container">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="" class="nav__link">
+            <a href="index.html" class="nav__link">
               Мои прокси
             </a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">
+            <a href="partnership.html" class="nav__link">
               Партнёрка
             </a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">
+            <a href="history.html" class="nav__link">
               История
             </a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">
+            <a href="checker.html" class="nav__link">
               Чекер
             </a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">
+            <a href="compatibility.html" class="nav__link">
               Поддержка IPv6
             </a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">
+            <a href="converter.html" class="nav__link">
               Конвертер
             </a>
           </li>
           <li class="nav__item nav__active">
-            <a href="" class="nav__link">
+            <a href="help.html" class="nav__link">
               <span>Помощь</span>
             </a>
           </li>
         </ul>
       </section>
     </nav>
-      <section class="wrapper help">
-        <h2 class="title">Помощь</h2>
-        <p class="help__text">Если у вас возникли проблемы, вы можете открыть заявку и получить ответы на свои вопросы.</p>
-        <div class="help__container">
-          <div class="help__col_left">
-            <button class="button_red">Новая заявка</button>
-            <table class="help__requests">
-              <thead>
-                <tr class="help__head_row">
-                  <th class="help__head_col">
-                    <span>Ваши заявки</span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="help__row">
-                  <td class="help__col">
-                    <p class="help__col_date">
-                      <span>Заявка 5 от 15.07.19</span>
-                      <span class="help__message_alert">10</span>
-                    </p>
-                    <p class="help__col_title">
-                      Ничего не работает
-                    </p>
-                    <p class="help__col_status">
-                      <span class="help__col_status_open">Открыта</span>
-                      <button class="help__col_status_delete">Удалить</button>
-                    </p>
-                  </td>
-                </tr>
-                <tr class="help__row">
-                  <td class="help__col help__opened">
-                    <p class="help__col_date">
-                      <span>Заявка 4 от 12.07.19</span>
-                    </p>
-                    <p class="help__col_title">
-                      Ошибка при проверке
-                    </p>
-                    <p class="help__col_status">
-                      <span class="help__col_status_close">Закрыта</span>
-                      <button class="help__col_status_delete">Удалить</button>
-                    </p>
-                  </td>
-                </tr>
-                <tr class="help__row">
-                  <td class="help__col">
-                    <p class="help__col_date">
-                      <span>Заявка 3 от 15.07.19</span>
-                    </p>
-                    <p class="help__col_title">
-                      Ничего не работает
-                    </p>
-                    <p class="help__col_status">
-                      <span class="help__col_status_close">Закрыта</span>
-                      <button class="help__col_status_delete">Удалить</button>
-                    </p>
-                  </td>
-                </tr>
-                <tr class="help__row">
-                  <td class="help__col">
-                    <p class="help__col_date">
-                      <span>Заявка 2 от 15.07.19</span>
-                    </p>
-                    <p class="help__col_title">
-                      Ничего не помогает
-                    </p>
-                    <p class="help__col_status">
-                      <span class="help__col_status_open">Открыта</span>
-                      <button class="help__col_status_delete">Удалить</button>
-                    </p>
-                  </td>
-                </tr>
-                <tr class="help__row">
-                  <td class="help__col">
-                    <p class="help__col_date">
-                      <span>Заявка 1 от 15.07.19</span>
-                    </p>
-                    <p class="help__col_title">
-                      Ничего не работает
-                    </p>
-                    <p class="help__col_status">
-                      <span class="help__col_status_close">Закрыта</span>
-                      <button class="help__col_status_delete">Удалить</button>
-                    </p>
-                  </td>
-                </tr>
+    <section class="wrapper help">
+      <h2 class="title">Помощь</h2>
+      <p class="help__text">Если у вас возникли проблемы, вы можете открыть заявку и получить ответы на свои вопросы.</p>
+      <div class="help__container">
+        <div class="help__col_left">
+          <button class="button_red">Новая заявка</button>
+          <table class="help__requests">
+            <thead>
+              <tr class="help__head_row">
+                <th class="help__head_col">
+                  <span>Ваши заявки</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="help__row">
+                <td class="help__col">
+                  <p class="help__col_date">
+                    <span>Заявка 5 от 15.07.19</span>
+                    <span class="help__message_alert">10</span>
+                  </p>
+                  <p class="help__col_title">
+                    Ничего не работает
+                  </p>
+                  <p class="help__col_status">
+                    <span class="help__col_status_open">Открыта</span>
+                    <button class="help__col_status_delete">Удалить</button>
+                  </p>
+                </td>
+              </tr>
+              <tr class="help__row">
+                <td class="help__col help__opened">
+                  <p class="help__col_date">
+                    <span>Заявка 4 от 12.07.19</span>
+                  </p>
+                  <p class="help__col_title">
+                    Ошибка при проверке
+                  </p>
+                  <p class="help__col_status">
+                    <span class="help__col_status_close">Закрыта</span>
+                    <button class="help__col_status_delete">Удалить</button>
+                  </p>
+                </td>
+              </tr>
+              <tr class="help__row">
+                <td class="help__col">
+                  <p class="help__col_date">
+                    <span>Заявка 3 от 15.07.19</span>
+                  </p>
+                  <p class="help__col_title">
+                    Ничего не работает
+                  </p>
+                  <p class="help__col_status">
+                    <span class="help__col_status_close">Закрыта</span>
+                    <button class="help__col_status_delete">Удалить</button>
+                  </p>
+                </td>
+              </tr>
+              <tr class="help__row">
+                <td class="help__col">
+                  <p class="help__col_date">
+                    <span>Заявка 2 от 15.07.19</span>
+                  </p>
+                  <p class="help__col_title">
+                    Ничего не помогает
+                  </p>
+                  <p class="help__col_status">
+                    <span class="help__col_status_open">Открыта</span>
+                    <button class="help__col_status_delete">Удалить</button>
+                  </p>
+                </td>
+              </tr>
+              <tr class="help__row">
+                <td class="help__col">
+                  <p class="help__col_date">
+                    <span>Заявка 1 от 15.07.19</span>
+                  </p>
+                  <p class="help__col_title">
+                    Ничего не работает
+                  </p>
+                  <p class="help__col_status">
+                    <span class="help__col_status_close">Закрыта</span>
+                    <button class="help__col_status_delete">Удалить</button>
+                  </p>
+                </td>
+              </tr>
 
-                <tr class="help__row">
-                  <td class="help__col">
-                    <p class="help__col_date">
-                      <span>Заявка 5 от 15.07.19</span>
-                      <span class="help__message_alert">10</span>
-                    </p>
-                    <p class="help__col_title">
-                      Ничего не работает
-                    </p>
-                    <p class="help__col_status">
-                      <span class="help__col_status_open">Открыта</span>
-                      <button class="help__col_status_delete">Удалить</button>
-                    </p>
-                  </td>
-                </tr>
-                <tr class="help__row">
-                  <td class="help__col help__opened">
-                    <p class="help__col_date">
-                      <span>Заявка 4 от 12.07.19</span>
-                    </p>
-                    <p class="help__col_title">
-                      Ошибка при проверке
-                    </p>
-                    <p class="help__col_status">
-                      <span class="help__col_status_close">Закрыта</span>
-                      <button class="help__col_status_delete">Удалить</button>
-                    </p>
-                  </td>
-                </tr>
-                <tr class="help__row">
-                  <td class="help__col">
-                    <p class="help__col_date">
-                      <span>Заявка 3 от 15.07.19</span>
-                    </p>
-                    <p class="help__col_title">
-                      Ничего не работает
-                    </p>
-                    <p class="help__col_status">
-                      <span class="help__col_status_close">Закрыта</span>
-                      <button class="help__col_status_delete">Удалить</button>
-                    </p>
-                  </td>
-                </tr>
-                <tr class="help__row">
-                  <td class="help__col">
-                    <p class="help__col_date">
-                      <span>Заявка 2 от 15.07.19</span>
-                    </p>
-                    <p class="help__col_title">
-                      Ничего не помогает
-                    </p>
-                    <p class="help__col_status">
-                      <span class="help__col_status_open">Открыта</span>
-                      <button class="help__col_status_delete">Удалить</button>
-                    </p>
-                  </td>
-                </tr>
-                <tr class="help__row">
-                  <td class="help__col">
-                    <p class="help__col_date">
-                      <span>Заявка 1 от 15.07.19</span>
-                    </p>
-                    <p class="help__col_title">
-                      Ничего не работает
-                    </p>
-                    <p class="help__col_status">
-                      <span class="help__col_status_close">Закрыта</span>
-                      <button class="help__col_status_delete">Удалить</button>
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="help__dialog">
-            <div class="help__dialog_theme">
-              <span>Тема обращения</span>
-              <input type="text" class="input" value="Ошибка при проверке">
-            </div>
-            <div class="help__dialog_field">
-              <div class="help__dialog_manager">
-                <div class="help__dialog_avatar">
-                  <img src="img/avatar.png" alt="Менеджер Максим">
-                </div>
-                <div class="help__dialog_content">
-                  <div class="help__dialog_title">
-                    <span class="help__dialog_name">Максим</span>
-                    <span class="help__dialog_manager_time">13:30</span>
-                  </div>
-                  <p class="help__dialog_text">Здравствуйте, Сергей! <br>Чем я могу вам помочь?</p>
-                </div>
-              </div>
-              <div class="help__dialog_client">
-                <div class="help__dialog_content">
-                  <div class="help__dialog_title">
-                    <span class="help__dialog_manager_time">13:30</span>
-                  </div>
-                  <p class="help__dialog_text">Здравствуйте, Максим! <br>У меня не работает чуть ли не половина прокси. В чём причина?</p>
-                </div>
-              </div>
-              <div class="help__dialog_manager">
-                <div class="help__dialog_avatar">
-                  <img src="img/avatar.png" alt="Менеджер Максим">
-                </div>
-                <div class="help__dialog_content">
-                  <div class="help__dialog_title">
-                    <span class="help__dialog_name">Максим</span>
-                    <span class="help__dialog_manager_time">13:30</span>
-                  </div>
-                  <p class="help__dialog_text">Здравствуйте, Сергей! <br>Чем я могу вам помочь?</p>
-                </div>
-              </div>
-              <div class="help__dialog_client">
-                <div class="help__dialog_content">
-                  <div class="help__dialog_title">
-                    <span class="help__dialog_manager_time">13:30</span>
-                  </div>
-                  <p class="help__dialog_text">Здравствуйте, Максим! <br>У меня не работает чуть ли не половина прокси. В чём причина?</p>
-                </div>
-              </div>
-            </div>
-            <form action="">
-              <textarea name="" id="" class="help__dialog_input"></textarea>
-              <div class="help__container">
-                <button type="submit" class="button_red">Отправить</button>
-                <button class="button_white">Закрыть заявку</button>
-              </div>
-            </form>
-          </div>
+              <tr class="help__row">
+                <td class="help__col">
+                  <p class="help__col_date">
+                    <span>Заявка 5 от 15.07.19</span>
+                    <span class="help__message_alert">10</span>
+                  </p>
+                  <p class="help__col_title">
+                    Ничего не работает
+                  </p>
+                  <p class="help__col_status">
+                    <span class="help__col_status_open">Открыта</span>
+                    <button class="help__col_status_delete">Удалить</button>
+                  </p>
+                </td>
+              </tr>
+              <tr class="help__row">
+                <td class="help__col help__opened">
+                  <p class="help__col_date">
+                    <span>Заявка 4 от 12.07.19</span>
+                  </p>
+                  <p class="help__col_title">
+                    Ошибка при проверке
+                  </p>
+                  <p class="help__col_status">
+                    <span class="help__col_status_close">Закрыта</span>
+                    <button class="help__col_status_delete">Удалить</button>
+                  </p>
+                </td>
+              </tr>
+              <tr class="help__row">
+                <td class="help__col">
+                  <p class="help__col_date">
+                    <span>Заявка 3 от 15.07.19</span>
+                  </p>
+                  <p class="help__col_title">
+                    Ничего не работает
+                  </p>
+                  <p class="help__col_status">
+                    <span class="help__col_status_close">Закрыта</span>
+                    <button class="help__col_status_delete">Удалить</button>
+                  </p>
+                </td>
+              </tr>
+              <tr class="help__row">
+                <td class="help__col">
+                  <p class="help__col_date">
+                    <span>Заявка 2 от 15.07.19</span>
+                  </p>
+                  <p class="help__col_title">
+                    Ничего не помогает
+                  </p>
+                  <p class="help__col_status">
+                    <span class="help__col_status_open">Открыта</span>
+                    <button class="help__col_status_delete">Удалить</button>
+                  </p>
+                </td>
+              </tr>
+              <tr class="help__row">
+                <td class="help__col">
+                  <p class="help__col_date">
+                    <span>Заявка 1 от 15.07.19</span>
+                  </p>
+                  <p class="help__col_title">
+                    Ничего не работает
+                  </p>
+                  <p class="help__col_status">
+                    <span class="help__col_status_close">Закрыта</span>
+                    <button class="help__col_status_delete">Удалить</button>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </section>
+        <div class="help__dialog">
+          <div class="help__dialog_theme">
+            <span>Тема обращения</span>
+            <input type="text" class="input" value="Ошибка при проверке">
+          </div>
+          <div class="help__dialog_field">
+            <div class="help__dialog_manager">
+              <div class="help__dialog_avatar">
+                <img src="img/avatar.png" alt="Менеджер Максим">
+              </div>
+              <div class="help__dialog_content">
+                <div class="help__dialog_title">
+                  <span class="help__dialog_name">Максим</span>
+                  <span class="help__dialog_manager_time">13:30</span>
+                </div>
+                <p class="help__dialog_text">Здравствуйте, Сергей! <br>Чем я могу вам помочь?</p>
+              </div>
+            </div>
+            <div class="help__dialog_client">
+              <div class="help__dialog_content">
+                <div class="help__dialog_title">
+                  <span class="help__dialog_manager_time">13:30</span>
+                </div>
+                <p class="help__dialog_text">Здравствуйте, Максим! <br>У меня не работает чуть ли не половина прокси. В чём причина?</p>
+              </div>
+            </div>
+            <div class="help__dialog_manager">
+              <div class="help__dialog_avatar">
+                <img src="img/avatar.png" alt="Менеджер Максим">
+              </div>
+              <div class="help__dialog_content">
+                <div class="help__dialog_title">
+                  <span class="help__dialog_name">Максим</span>
+                  <span class="help__dialog_manager_time">13:30</span>
+                </div>
+                <p class="help__dialog_text">Здравствуйте, Сергей! <br>Чем я могу вам помочь?</p>
+              </div>
+            </div>
+            <div class="help__dialog_client">
+              <div class="help__dialog_content">
+                <div class="help__dialog_title">
+                  <span class="help__dialog_manager_time">13:30</span>
+                </div>
+                <p class="help__dialog_text">Здравствуйте, Максим! <br>У меня не работает чуть ли не половина прокси. В чём причина?</p>
+              </div>
+            </div>
+          </div>
+          <form action="">
+            <textarea name="" id="" class="help__dialog_input"></textarea>
+            <div class="help__container">
+              <button type="submit" class="button_red">Отправить</button>
+              <button class="button_white">Закрыть заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="js/jquery-3.4.1.min.js"></script>
