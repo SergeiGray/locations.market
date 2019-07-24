@@ -27,6 +27,10 @@
       cursorborder: "none"
       });
     });
+    $('.help__dialog_field').niceScroll({
+      cursorcolor: "#CCCCCC",
+      cursorborder: "none"
+    });
   }
 
   var getShowInMyProxy = function () {
