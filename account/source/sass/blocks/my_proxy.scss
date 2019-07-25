@@ -194,9 +194,20 @@
 .my_proxy__verification {
   width: 100px;
 
+  button {
+    background-color: transparent;
+    border: none;
+    color: #333333;
+    padding: 0;
+    cursor: pointer;
+  }
+
   &:hover {
-    text-decoration: underline;
-    color: #EF081F;
+
+    button {
+      text-decoration: underline;
+      color: #EF081F;
+    }
   }
 }
 
@@ -214,6 +225,7 @@
     font-size: 12px;
     line-height: 140%;
     color: #595959;
+    cursor: pointer;
 
     &:hover {
       color: #EF081F;
@@ -284,16 +296,32 @@
   .my_proxy__working {
     color: #4995FF;
 
+    button {
+      color: #4995FF;
+    }
+
     &:hover {
       color: #EF081F;
+
+      button {
+        color: #EF081F;
+      }
     }
   }
 
   .my_proxy__not_working {
     color: #FF3501;
 
+    button {
+      color: #FF3501;
+    }
+
     &:hover {
       color: #EF081F;
+
+      button {
+        color: #EF081F;
+      }
     }
   }
 }

@@ -63,6 +63,10 @@
         check('#show__export', '.my_proxy__export', '.show__export');
         check('#show__prolong', '.my_proxy__prolong', '.show__prolong');
       };
+      $('body').getNiceScroll().remove();
+      $('body').niceScroll({cursorcolor: "#CCCCCC", cursorborder: "none"});
+      $('tbody').getNiceScroll().remove();
+      $('tbody').niceScroll({cursorcolor: "#CCCCCC", cursorborder: "none"});
     });
 
     $(".my_proxy__edit_nav .main__input").change( function() {
