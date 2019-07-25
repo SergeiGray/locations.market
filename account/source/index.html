@@ -396,7 +396,7 @@
             <button type="submit" class="button_red">Найти</button>
           </form>
           <p class="text last">Вы можете использовать
-            <a href="" class="link my_proxy__open_pop_up">Поиск списком
+            <a href="" class="link show__search_popup">Поиск списком
             </a>
             <div class="icon_container">
               <svg class="icon" width="13" height="13">
@@ -587,7 +587,7 @@
                 <button>Проверить</button>
               </td>
               <td class="main__col my_proxy__autoprolong  my_proxy__connected">
-                <span>подкл.</span>
+                <button>подкл.</button>
               </td>
               <td class="main__col my_proxy__hide">
                 <button>Скрыть</button>
@@ -633,7 +633,7 @@
                 <button>Не работает</button>
               </td>
               <td class="main__col my_proxy__autoprolong  my_proxy__disconnected">
-                <span>откл.</span>
+                <button>откл.</button>
               </td>
               <td class="main__col my_proxy__hide">
                 <button>Скрыть</button>
@@ -678,7 +678,7 @@
                 <button>Работает</button>
               </td>
               <td class="main__col my_proxy__autoprolong  my_proxy__connected">
-                <span>подкл.</span>
+                <button>подкл.</button>
               </td>
               <td class="main__col my_proxy__hide">
                 <button>Скрыть</button>
@@ -723,7 +723,7 @@
                 <button>Проверить</button>
               </td>
               <td class="main__col my_proxy__autoprolong  my_proxy__connected">
-                <span>подкл.</span>
+                <button>подкл.</button>
               </td>
               <td class="main__col my_proxy__hide">
                 <button>Скрыть</button>
@@ -769,7 +769,7 @@
                 <button>Не работает</button>
               </td>
               <td class="main__col my_proxy__autoprolong  my_proxy__disconnected">
-                <span>откл.</span>
+                <button>откл.</button>
               </td>
               <td class="main__col my_proxy__hide">
                 <button>Скрыть</button>
@@ -815,7 +815,7 @@
                 <button>Работает</button>
               </td>
               <td class="main__col my_proxy__autoprolong  my_proxy__connected">
-                <span>подкл.</span>
+                <button>подкл.</button>
               </td>
               <td class="main__col my_proxy__hide">
                 <button>Скрыть</button>
@@ -861,7 +861,7 @@
                 <button>Проверить</button>
               </td>
               <td class="main__col my_proxy__autoprolong  my_proxy__connected">
-                <span>подкл.</span>
+                <button>подкл.</button>
               </td>
               <td class="main__col my_proxy__hide">
                 <button>Скрыть</button>
@@ -907,7 +907,7 @@
                 <button>Не работает</button>
               </td>
               <td class="main__col my_proxy__autoprolong  my_proxy__disconnected">
-                <span>откл.</span>
+                <button>откл.</button>
               </td>
               <td class="main__col my_proxy__hide">
                 <button>Скрыть</button>
@@ -953,7 +953,7 @@
                 <button>Работает</button>
               </td>
               <td class="main__col my_proxy__autoprolong  my_proxy__connected">
-                <span>подкл.</span>
+                <button>подкл.</button>
               </td>
               <td class="main__col my_proxy__hide">
                 <button>Скрыть</button>
@@ -999,7 +999,7 @@
                 <button>Проверить</button>
               </td>
               <td class="main__col my_proxy__autoprolong  my_proxy__connected">
-                <span>подкл.</span>
+                <button>подкл.</button>
               </td>
               <td class="main__col my_proxy__hide">
                 <button>Скрыть</button>
@@ -1045,7 +1045,7 @@
                 <button>Не работает</button>
               </td>
               <td class="main__col my_proxy__autoprolong  my_proxy__disconnected">
-                <span>откл.</span>
+                <button>откл.</button>
               </td>
               <td class="main__col my_proxy__hide">
                 <button>Скрыть</button>
@@ -1091,7 +1091,7 @@
                 <button>Работает</button>
               </td>
               <td class="main__col my_proxy__autoprolong  my_proxy__connected">
-                <span>подкл.</span>
+                <button>подкл.</button>
               </td>
               <td class="main__col my_proxy__hide">
                 <button>Скрыть</button>
@@ -1120,6 +1120,18 @@
             </tr>
           </tfoot>
         </table>
+      </section>
+      <section class="my_proxy__search_pop_up">
+        <svg class="popup__close" width="16" height="16">
+          <title>Закрыть</title>
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+        <p class="title">Поиск списком</p>
+        <form action="">
+          <p class="text">Введите текст для поиска</p>
+          <textarea name="" id="" placeholder="Что искать" class="main__textarea"></textarea>
+          <button type="submit" class="button_red">Найти</button>
+        </form>
       </section>
     </section>
   </main>

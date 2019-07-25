@@ -95,10 +95,71 @@
 
 .group__coment {
   flex-grow: 1;
-  position: relative;
+}
 
-  .main__coment_label {
-    top: 0 !important;
-    left: 0 !important;
-  }
+
+.group__coment_text {
+  width: 320px;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 10px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  resize: none;
+  border: none;
+  color: #333333;
+  background-color: transparent;
+}
+
+.group__coment_text:focus {
+  border: 1px solid #B3A4FF;
+  padding-left: 14px;
+  padding: 9px 13px 0;
+}
+
+.group__coment_text::placeholder {
+  text-align: left;
+  opacity: 1;
+  color: #333333;
+}
+
+.group__coment_text:focus::placeholder {
+  color: transparent;
+}
+
+.group__coment_label {
+  display: none;
+}
+
+.group__coment_text:not(:focus):hover +.group__coment_label {
+  display: block;
+  width: 320px;
+  min-height: 70px;
+  padding: 13px 15px 13px 22px;
+  position: absolute;
+  box-sizing: border-box;
+  text-align: left;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: #524B4B;
+  font-size: 13px;
+  line-height: 140%;
+  color: #FFFFFF;
+  z-index: 13;
+}
+
+.group__coment_text:not(:focus):hover + .group__coment_label::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -5px;
+  left: 160px;
+  background: #524B4B;
+  transform: rotate(-45deg);
+}
+
+.group__coment_off {
+  visibility: hidden;
 }

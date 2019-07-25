@@ -430,7 +430,7 @@ body {
 }
 
 .main__coment_text:focus::placeholder {
-  color: #ffffff;
+  color: transparent;
 }
 
 .main__coment_label {
@@ -450,6 +450,7 @@ body {
   font-size: 13px;
   line-height: 140%;
   color: #FFFFFF;
+  z-index: 13;
 }
 
 .main__coment_text:not(:focus):hover + .main__coment_label::after {

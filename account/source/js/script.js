@@ -100,6 +100,38 @@
     });
   };
 
+  var getComentInGroup = function () {
+    var l = 0;
+
+    $(window).on("load", function() {
+      $('.group__coment_text').each( function (index, el) {
+        var label = $(el).parents('td').find('.group__coment_label');
+        $(el)[0].scrollWidth > $(el).innerWidth() ? label.removeClass('group__coment_off') : label.addClass('group__coment_off');
+      });
+    });
+
+    $('.group__coment_text').focusout( function (evt) {
+      let text = $(evt.target).val();
+      let label = $(evt.target).parents('td').find('.group__coment_label');
+      label.text(text);
+      $(evt.target)[0].scrollWidth > $(evt.target).innerWidth() ? label.removeClass('group__coment_off') : label.addClass('group__coment_off');
+    });
+
+    $('.group__coment_text').mouseover( function (evt) {
+
+      if(l === 0) {$('.group__coment_text').each( function (index, el) {
+        var label = $(el).parents('td').find('.group__coment_label');
+        $(el)[0].scrollWidth > $(el).innerWidth() ? label.removeClass('group__coment_off') : label.addClass('group__coment_off');
+      }); l++}
+
+      let label = $(evt.target).parents('td').find('.group__coment_label');
+      let position = $(evt.target).position();
+      let height = label.height();
+      label.attr('style', 'top: ' + (position.top + 70 - height) + 'px;' + 'left: ' + (position.left + 50) + 'px;' );
+    });
+  };
+
+
   var copyText = function (buttonCopy, copyTextBlock) {
     $(buttonCopy).click( function(evt) {
       let copyText = document.getElementById(copyTextBlock);
@@ -140,6 +172,22 @@
     });
   };
 
+  var showPopUpMyProxySearch = function () {
+    $('.popup__close, .overlay').click(function (){
+      $('.my_proxy__search_pop_up, .overlay').css({'opacity': 0, 'display': 'none'});
+    });
+    $('.show__search_popup').click(function (event){
+      event.preventDefault();
+      $('.my_proxy__search_pop_up, .overlay').css({'opacity': 1, 'display': 'flex'});
+      $(document).keydown(function(event) {
+          if (event.keyCode === 27) {
+              event.stopPropagation();
+              $('.my_proxy__search_pop_up, .overlay').css({'opacity': 0, 'display': 'none'});
+          }
+      });
+    });
+  };
+
   var renameGroup = function () {
     $(".group__rename").click(function (evt) {
       evt.preventDefault();
@@ -166,5 +214,7 @@
   showPopUpPricing();
   renameGroup();
   showPopUpGroup();
+  showPopUpMyProxySearch();
+  getComentInGroup();
 
 }());
