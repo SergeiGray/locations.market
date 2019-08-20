@@ -51,34 +51,20 @@
 .help tr,
 .help th,
 .help td {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   width: 100%;
   box-sizing: border-box;
 }
 
 .help table.help__requests {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
   flex-direction: column;
   width: 240px;
-  min-height: 500px;
-  max-height: calc(100vh - 325px);
 }
 
 .help__requests tbody {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
   flex-direction: column;
   min-height: 400px;
-  height: 100%;
+  max-height: calc(100vh - 370px);
   overflow: auto;
 }
 
@@ -94,12 +80,14 @@
   background-color: #fff;
 }
 
+.help__row {
+  display: flex;
+  flex-shrink: 0;
+}
+
 .help__col {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
   flex-direction: column;
+  flex-shrink: 0;
   padding: 12px 10px 10px 20px;
   border-bottom: none;
   background-color: #FAFAFA;
@@ -168,8 +156,6 @@
   display: flex;
   flex-direction: column;
   width: 890px;
-  min-height: 545px;
-  max-height: calc(100vh - 270px);
   padding: 19px 24px 27px;
   box-sizing: border-box;
   background-color: #FAFAFA;
@@ -199,6 +185,7 @@
   flex-direction: column;
   width: 100%;
   min-height: 305px;
+  max-height: calc(100vh - 510px);
   height: 100%;
   box-sizing: border-box;
   padding: 27px 11px 20px 15px;
@@ -212,38 +199,22 @@
 }
 
 .help__dialog_field .os-content {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
   flex-direction: column;
 }
 
 .help__dialog_manager {
-  -ms-align-self: flex-start;
   align-self: flex-start;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
+  flex-shrink: 0;
   max-width: 330px;
   margin-bottom: 10px;
 }
 
 .help__dialog_client {
-  -ms-align-self: flex-end;
   align-self: flex-end;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
+  flex-shrink: 0;
   justify-content: flex-end;
   max-width: 495px;
   margin-bottom: 10px;

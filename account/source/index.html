@@ -52,7 +52,7 @@
     <section class="pricing">
       <svg class="popup__close" width="20" height="20"></svg>
       <h2 class="title">Купить прокси</h2>
-      <p class="pricing__text">Перед покупкой убедитесь, что прокси подходит для выбранного вами сервиса. <a href="" class="pricing__link">Поддержка IPv6</a></p>
+      <p class="pricing__text">Перед покупкой убедитесь, что прокси подходит для выбранного вами сервиса. <a href="compatibility.html" class="pricing__link">Поддержка IPv6</a></p>
       <div class="pricing__container">
         <div class="pricing__item_container">
           <h2 class="pricing__item_title">IPv6 прокси</h2>
@@ -265,35 +265,41 @@
             <div class="my_proxy__filter_row">
               <div class="my_proxy__filter_col my_proxy__filter_col_active">
                 <h2 class="subtitle">Активность</h2>
-                <div class="my_proxy__filter_row">
-                  <div class="my_proxy__filter_container">
-                    <input id="my_proxy__filter_active" type="checkbox" name="" class="main__checkbox">
-                    <label for="my_proxy__filter_active" class="main__checkbox_label">Активные</label>
+                <div class="my_proxy__filter_col">
+                  <div class="my_proxy__filter_row">
+                    <div class="my_proxy__filter_container">
+                      <input id="my_proxy__filter_active" type="checkbox" name="" class="main__checkbox">
+                      <label for="my_proxy__filter_active" class="main__checkbox_label">Активные</label>
+                    </div>
+                    <div class="my_proxy__filter_container">
+                      <input id="my_proxy__filter_prolong" type="checkbox" name="" class="main__checkbox">
+                      <label for="my_proxy__filter_prolong" class="main__checkbox_label">Требуют продления</label>
+                    </div>
                   </div>
-                  <div class="my_proxy__filter_container">
-                    <input id="my_proxy__filter_prolong" type="checkbox" name="" class="main__checkbox">
-                    <label for="my_proxy__filter_prolong" class="main__checkbox_label">Требуют продления</label>
-                  </div>
-                  <div class="my_proxy__filter_container">
-                    <input id="my_proxy__filter_visible" type="checkbox" name="" class="main__checkbox">
-                    <label for="my_proxy__filter_visible" class="main__checkbox_label">Видимые</label>
-                  </div>
-                  <div class="my_proxy__filter_container">
-                    <input id="my_proxy__filter_hidden" type="checkbox" name="" class="main__checkbox">
-                    <label for="my_proxy__filter_hidden" class="main__checkbox_label">Скрытые</label>
+                  <div class="my_proxy__filter_row">
+                    <div class="my_proxy__filter_container">
+                      <input id="my_proxy__filter_visible" type="checkbox" name="" class="main__checkbox">
+                      <label for="my_proxy__filter_visible" class="main__checkbox_label">Видимые</label>
+                    </div>
+                    <div class="my_proxy__filter_container">
+                      <input id="my_proxy__filter_hidden" type="checkbox" name="" class="main__checkbox">
+                      <label for="my_proxy__filter_hidden" class="main__checkbox_label">Скрытые</label>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="my_proxy__filter_col my_proxy__filter_col_version">
                 <h2 class="subtitle">Версия</h2>
-                <div class="my_proxy__filter_row">
-                  <div class="my_proxy__filter_container">
-                    <input id="my_proxy__filter_ipv6" type="checkbox" name="" class="main__checkbox">
-                    <label for="my_proxy__filter_ipv6" class="main__checkbox_label">IPv6</label>
-                  </div>
-                  <div class="my_proxy__filter_container">
-                    <input id="my_proxy__filter_sharedipv4" type="checkbox" name="" class="main__checkbox">
-                    <label for="my_proxy__filter_sharedipv4" class="main__checkbox_label">Shared IPv4</label>
+                <div class="my_proxy__filter_col">
+                  <div class="my_proxy__filter_row">
+                    <div class="my_proxy__filter_container">
+                      <input id="my_proxy__filter_ipv6" type="checkbox" name="" class="main__checkbox">
+                      <label for="my_proxy__filter_ipv6" class="main__checkbox_label">IPv6</label>
+                    </div>
+                    <div class="my_proxy__filter_container">
+                      <input id="my_proxy__filter_sharedipv4" type="checkbox" name="" class="main__checkbox">
+                      <label for="my_proxy__filter_sharedipv4" class="main__checkbox_label">Shared IPv4</label>
+                    </div>
                   </div>
                   <div class="my_proxy__filter_container">
                     <input id="my_proxy__filter_ipv4" type="checkbox" name="" class="main__checkbox">
@@ -304,7 +310,7 @@
               <div class="my_proxy__filter_col
               my_proxy__filter_col_type">
                 <h2 class="subtitle">Тип</h2>
-                <div class="my_proxy__filter_row">
+                <div class="my_proxy__filter_col">
                   <div class="my_proxy__filter_container">
                     <input id="my_proxy__filter_socks" type="checkbox" name="" class="main__checkbox">
                     <label for="my_proxy__filter_socks" class="main__checkbox_label">SOCKS</label>
@@ -317,7 +323,7 @@
               </div>
               <div class="my_proxy__filter_col my_proxy__filter_col_coment">
                 <h2 class="subtitle">Комментарий</h2>
-                <div class="my_proxy__filter_row">
+                <div class="my_proxy__filter_col">
                   <div class="my_proxy__filter_container">
                     <input id="my_proxy__filter_with_coment" type="checkbox" name="" class="main__checkbox">
                     <label for="my_proxy__filter_with_coment" class="main__checkbox_label">Есть</label>
@@ -330,7 +336,7 @@
               </div>
               <div class="my_proxy__filter_col my_proxy__filter_col_autoprolong">
                 <h2 class="subtitle">Автопродление</h2>
-                <div class="my_proxy__filter_row">
+                <div class="my_proxy__filter_col">
                   <div class="my_proxy__filter_container">
                     <input id="my_proxy__filter_with_autoprolong" type="checkbox" name="" class="main__checkbox">
                     <label for="my_proxy__filter_with_autoprolong" class="main__checkbox_label">Подключено</label>

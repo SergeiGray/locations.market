@@ -95,11 +95,19 @@
 
 .group__coment {
   flex-grow: 1;
+  position: relative;
 }
 
+.group__row {
+  position: static;
+}
+
+.group__tbody {
+  position: static;
+}
 
 .group__coment_text {
-  width: 320px;
+  width: 310px;
   height: 35px;
   box-sizing: border-box;
   padding: 10px 0 0;
@@ -130,14 +138,14 @@
 
 .group__coment_label {
   display: none;
+  position: fixed;
 }
 
-.group__coment_text:not(:focus):hover +.group__coment_label {
+.group__coment_text:not(:focus):hover + .group__coment_label {
   display: block;
   width: 320px;
   min-height: 70px;
   padding: 13px 15px 13px 22px;
-  position: absolute;
   box-sizing: border-box;
   text-align: left;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);

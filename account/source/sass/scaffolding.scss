@@ -5,8 +5,6 @@ body {
   margin: 0;
 }
 
-// * { outline: 1px solid green; }
-
 // ---WRAPPER---
 
 .wrapper {
@@ -259,6 +257,7 @@ body {
 .main__table td {
   display: flex;
   box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .main__table tr {

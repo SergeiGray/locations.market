@@ -411,13 +411,14 @@
 .my_proxy__filter_row {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-shrink: 0;
   width: 100%;
 }
 
 .my_proxy__filter_col {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 }
 
 .my_proxy__filter_col_active {
@@ -480,30 +481,22 @@
 
 .my_proxy__filter_col_coment {
 
-  .my_proxy__filter_row {
-    flex-direction: column;
+  .my_proxy__filter_container {
 
-    .my_proxy__filter_container {
-
-      &:nth-child(1) {
-        margin-right: auto;
-        margin-bottom: 13px;
-      }
+    &:nth-child(1) {
+      margin-right: auto;
+      margin-bottom: 13px;
     }
   }
 }
 
 .my_proxy__filter_col_autoprolong {
 
-  .my_proxy__filter_row {
-    flex-direction: column;
+  .my_proxy__filter_container {
 
-    .my_proxy__filter_container {
-
-      &:nth-child(1) {
-        margin-right: auto;
-        margin-bottom: 13px;
-      }
+    &:nth-child(1) {
+      margin-right: auto;
+      margin-bottom: 13px;
     }
   }
 }
@@ -545,6 +538,7 @@
 
     &.last {
       margin-right: 8px;
+      flex-shrink: 0;
     }
   }
 
@@ -613,6 +607,7 @@
       @include font_Ubuntu;
       content: 'Поиск списком помогает найти нужные прокси, используя множество параметров или список из прокси';
       position: absolute;
+      top: -60px;
       left: -225px;
       display: -webkit-flex;
       display: -moz-flex;
@@ -708,6 +703,10 @@
 
 .my_proxy__edit_login {
   display: flex;
+
+  .my_proxy__item_container {
+    width: 260px;
+  }
 
   .form {
     align-items: flex-start;
